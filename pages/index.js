@@ -39,7 +39,7 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
+                  className="cursor-pointer text-2xl"
                 />
               </li>
               <li>
@@ -84,7 +84,7 @@ export default function Home() {
             <h3 className="flex justify-center text-3xl py-1 dark:text-white ">Servicios</h3>
 
           </div>
-          <div className="lg:flex gap-10">
+          <div className="lg:flex gap-10 px-8 md:px-14">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={design} alt="design" width={100} height={100} className="mx-auto" />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
@@ -137,11 +137,11 @@ export default function Home() {
           </div>
         </section>
         {/* PORTAFOLIO */}
-        <section className="py-10 px-20">
+        <section className="py-10 md:px-20">
           <div>
             <h3 className=" text-center text-3xl py-1 dark:text-white ">Portofolio</h3>
           </div>
-          <div className="flex flex-col gap-20 p-10 lg:flex-row lg:flex-wrap">
+          <div className="flex flex-col gap-10 p-10 md:gap-20 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
               <Image
                 className="rounded-lg object-cover"
