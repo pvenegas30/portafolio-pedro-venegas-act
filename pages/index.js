@@ -30,10 +30,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=" bg-gradient-to-t from-white via-white to-gray-100 dark:bg-gray-900 md:px-10 lg:px-20">
+      <main className=" bg-white dark:bg-gray-900">
         <section className="min-h-screen">
 
-          <nav className="w-full bg-white py-4 px-5 mb-12 flex justify-between dark:text-white">
+          <nav id='nav' className="fixed w-full bg-white py-3 px-5 mb-12 flex justify-between dark:text-white">
             <Image src={logo} alt="logo" className="w-12 h-12 object-cover" />
             <ul className="flex items-center">
               <li>
@@ -55,7 +55,7 @@ export default function Home() {
 
           {/* Sección Presentación */}
 
-          <div className="px-10 text-center p-10 py-10">
+          <div className="text-center p-10 py-40 md:px-10 lg:px-20">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               Pedro Venegas
             </h2>
@@ -137,17 +137,16 @@ export default function Home() {
           </div>
         </section>
         {/* PORTAFOLIO */}
-        <section className="py-10">
+        <section className="py-10 px-20">
           <div>
             <h3 className=" text-center text-3xl py-1 dark:text-white ">Portofolio</h3>
           </div>
-          <div className="flex flex-col gap-10 p-10 lg:flex-row lg:flex-wrap">
+          <div className="flex flex-col gap-20 p-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
               <Image
                 className="rounded-lg object-cover"
                 width={"80%"}
                 height={"100%"}
-                layout="responsive"
                 src={web1}
                 alt="web"
               />
@@ -157,7 +156,6 @@ export default function Home() {
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
                 src={web2}
                 alt="web"
               />
@@ -167,7 +165,6 @@ export default function Home() {
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
                 src={web3}
                 alt="web"
               />
@@ -177,7 +174,6 @@ export default function Home() {
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
                 src={web4}
                 alt="web"
               />
@@ -187,7 +183,6 @@ export default function Home() {
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
                 src={web5}
                 alt="web"
               />
@@ -197,7 +192,6 @@ export default function Home() {
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
                 src={web6}
                 alt="web"
               />
@@ -205,7 +199,8 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className='flex justify-center items-center bg-black h-20 w-full'>
+      {/* FOOTER */}
+      <footer className='flex justify-center items-center bg-black h-20 m-0 w-full'>
         <div>
           <p className='text-white  text-center w-full'>Portafolio Pedro Venegas © 2022</p>
         </div>
