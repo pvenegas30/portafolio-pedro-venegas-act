@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { BsFillMoonStarsFill } from "react-icons/bs";
-
+import Image from "next/image";
+import perfil from "../public/perfil-home.jpg";
 export default function Home() {
   return (
     <div>
@@ -18,7 +19,6 @@ export default function Home() {
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill title='Modo Oscuro'
-                  onClick={() => setDarkMode(!darkMode)}
                   className=" cursor-pointer text-2xl"
                 />
               </li>
@@ -34,21 +34,22 @@ export default function Home() {
           </nav>
 
           {/* Sección Presentación */}
-          <div className="text-right p-10 py-10">
-            <div>
-              <img src='../public/perfil-home.jpg' />
+          <div className="flex justify-center p-10 py-10 w-50">
+            <div className="flex rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-30 md:w-30">
+              <Image src={perfil} layout="fill" objectFit="cover" />
+            </div>
+            <div className='flex-col  w-50'>
+              <h2 className="text-4xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+                Pedro Venegas
+              </h2>
+              <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+                Desarrollador Web
+              </h3>
+              <p className="text-left text-base py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+                ¡Hola! Soy un desarrollador web Full Stack, me considero una persona creativa, responsable y con iniciativa. He obtenido mis conocimientos realizando varios cursos profesionales y siempre me encuentro aprendiendo para mejorar cada vez más mis habilidades.
+              </p>
             </div>
 
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-              Pedro Venegas
-            </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Desarrollador Web
-            </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              ¡Hola! Soy un desarrollador web Full Stack, me considero una persona creativa, responsable y con iniciativa. He obtenido mis conocimientos realizando varios cursos profesionales y siempre me encuentro aprendiendo para mejorar cada vez más mis habilidades.
-
-            </p>
 
           </div>
         </section>
