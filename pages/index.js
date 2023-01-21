@@ -34,18 +34,18 @@ export default function Home() {
           </nav>
 
           {/* Sección Presentación */}
-          <div className="flex justify-center p-10 py-10 w-50">
-            <div className="flex rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-30 md:w-30">
+          <div className="flex justify-center p-10 py-10 w-full">
+            <div className="rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-25 md:w-25">
               <Image src={perfil} layout="fill" objectFit="cover" />
             </div>
-            <div className='flex-col  w-50'>
-              <h2 className="text-4xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+            <div className='flex-col ml-16 pt-16'>
+              <h2 className="text-4xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-5xl">
                 Pedro Venegas
               </h2>
-              <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-                Desarrollador Web
+              <h3 className="text-xl py-2 dark:text-white md:text-2xl">
+                Desarrollador Web Full-Stck
               </h3>
-              <p className="text-left text-base py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+              <p className="text-justify text-base py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
                 ¡Hola! Soy un desarrollador web Full Stack, me considero una persona creativa, responsable y con iniciativa. He obtenido mis conocimientos realizando varios cursos profesionales y siempre me encuentro aprendiendo para mejorar cada vez más mis habilidades.
               </p>
             </div>
