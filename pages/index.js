@@ -2,6 +2,13 @@ import Head from 'next/head'
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import Image from "next/image";
 import perfil from "../public/perfil-home.jpg";
+import logo from "../public/logoBlue.png";
+import {
+  AiFillTwitterCircle,
+  AiFillLinkedin,
+  AiFillYoutube,
+} from "react-icons/ai";
+
 export default function Home() {
   return (
     <div>
@@ -11,11 +18,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=" px-10 min-h-screen">
+      <main className="bg-white dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
 
-          <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">Pedro</h1>
+          <nav className="w-full bg-white py-8 px-5 mb-12 flex justify-between dark:text-white">
+            <Image src={logo} className="w-12 h-12 object-cover" />
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill title='Modo Oscuro'
@@ -34,22 +41,26 @@ export default function Home() {
           </nav>
 
           {/* Sección Presentación */}
-          <div className="flex justify-center p-10 py-10 w-full">
-            <div className="rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-25 md:w-25">
-              <Image src={perfil} layout="fill" objectFit="cover" />
-            </div>
-            <div className='flex-col ml-16 pt-16'>
-              <h2 className="text-4xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-5xl">
-                Pedro Venegas
-              </h2>
-              <h3 className="text-xl py-2 dark:text-white md:text-2xl">
-                Desarrollador Web Full-Stck
-              </h3>
-              <p className="text-justify text-base py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-                ¡Hola! Soy un desarrollador web Full Stack, me considero una persona creativa, responsable y con iniciativa. He obtenido mis conocimientos realizando varios cursos profesionales y siempre me encuentro aprendiendo para mejorar cada vez más mis habilidades.
-              </p>
+
+          <div className="px-10 text-center p-10 py-10">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+              Pedro Venegas
+            </h2>
+            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+              Desarrollador Web Full-Stck
+            </h3>
+            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+              ¡Hola! Soy un desarrollador web Full Stack, me considero una persona creativa, responsable y con iniciativa. He obtenido mis conocimientos realizando varios cursos profesionales y siempre me encuentro aprendiendo para mejorar cada vez más mis habilidades.
+            </p>
+            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+              <AiFillTwitterCircle />
+              <AiFillLinkedin />
+              <AiFillYoutube />
             </div>
 
+            <div className=" w-56 h-56 mt-10 md:h-96 md:w-96">
+              <Image src={perfil} className="rounded-full object-fill object-cover" />
+            </div>
 
           </div>
         </section>
