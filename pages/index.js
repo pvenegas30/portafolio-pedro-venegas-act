@@ -11,6 +11,12 @@ import content from "../public/code.png";
 import design from "../public/design.png";
 import creativity from "../public/diseño.png";
 import { useState } from 'react';
+import web1 from "../public/Projects/web1.png";
+import web2 from "../public/Projects/web2.png";
+import web3 from "../public/Projects/web3.png";
+import web4 from "../public/Projects/web4.png";
+import web5 from "../public/Projects/web5.png";
+import web6 from "../public/Projects/web6.png";
 
 export default function Home() {
 
@@ -31,7 +37,8 @@ export default function Home() {
             <Image src={logo} alt="logo" className="w-12 h-12 object-cover" />
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill title='Modo Oscuro'
+                <BsFillMoonStarsFill
+                  onClick={() => setDarkMode(!darkMode)}
                   className=" cursor-pointer text-2xl"
                 />
               </li>
@@ -129,7 +136,80 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* PORTAFOLIO */}
+        <section className="py-10">
+          <div>
+            <h3 className=" text-center text-3xl py-1 dark:text-white ">Portofolio</h3>
+          </div>
+          <div className="flex flex-col gap-10 p-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/3 flex-1 ">
+              <Image
+                className="rounded-lg object-cover"
+                width={"80%"}
+                height={"100%"}
+                layout="responsive"
+                src={web1}
+                alt="web"
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web2}
+                alt="web"
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web3}
+                alt="web"
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web4}
+                alt="web"
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web5}
+                alt="web"
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web6}
+                alt="web"
+              />
+            </div>
+          </div>
+        </section>
       </main>
+      <footer className='flex justify-center items-center bg-black h-20 w-full'>
+        <div>
+          <p className='text-white  text-center w-full'>Portafolio Pedro Venegas © 2022</p>
+        </div>
+      </footer>
     </div>
   )
 }
