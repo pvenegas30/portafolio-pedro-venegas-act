@@ -4,9 +4,8 @@ import Image from "next/image";
 import perfil from "../public/perfil-home.jpg";
 import logo from "../public/logoBlue.png";
 import {
-  AiFillTwitterCircle,
+  AiFillGithub,
   AiFillLinkedin,
-  AiFillYoutube,
 } from "react-icons/ai";
 
 export default function Home() {
@@ -53,13 +52,12 @@ export default function Home() {
               ¡Hola! Soy un desarrollador web Full Stack, me considero una persona creativa, responsable y con iniciativa. He obtenido mis conocimientos realizando varios cursos profesionales y siempre me encuentro aprendiendo para mejorar cada vez más mis habilidades.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
+              <AiFillGithub />
               <AiFillLinkedin />
-              <AiFillYoutube />
             </div>
 
-            <div className=" w-56 h-56 mt-10 md:h-96 md:w-96">
-              <Image src={perfil} className="rounded-full object-fill object-cover" />
+            <div className="mx-auto w-56 h-56 mt-10 md:h-96 md:w-96">
+              <Image src={perfil} className="rounded-full object-cover" />
             </div>
 
           </div>
