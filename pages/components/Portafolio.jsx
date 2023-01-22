@@ -19,54 +19,42 @@ export const Portafolio = () => {
         <div className='flex flex-col gap-10 p-10 md:gap-20 lg:flex-row lg:flex-wrap'>
           <div className='basis-1/3 flex-1 '>
             <Image
-              className='rounded-lg object-cover'
-              width={"80%"}
-              height={"100%"}
+              className='rounded-lg object-cover w-full h-52 md:h-60'
               src={web1}
               alt='web'
             />
           </div>
           <div className='basis-1/3 flex-1'>
             <Image
-              className='rounded-lg object-cover'
-              width={"100%"}
-              height={"100%"}
+              className='rounded-lg object-cover w-full h-52 md:h-60'
               src={web2}
               alt='web'
             />
           </div>
           <div className='basis-1/3 flex-1'>
             <Image
-              className='rounded-lg object-cover'
-              width={"100%"}
-              height={"100%"}
+              className='rounded-lg object-cover w-full h-52 md:h-60'
               src={web3}
               alt='web'
             />
           </div>
           <div className='basis-1/3 flex-1'>
             <Image
-              className='rounded-lg object-cover'
-              width={"100%"}
-              height={"100%"}
+              className='rounded-lg object-cover w-full h-52 md:h-60'
               src={web4}
               alt='web'
             />
           </div>
           <div className='basis-1/3 flex-1'>
             <Image
-              className='rounded-lg object-cover'
-              width={"100%"}
-              height={"100%"}
+              className='rounded-lg object-cover w-full h-52 md:h-60'
               src={web5}
               alt='web'
             />
           </div>
           <div className='basis-1/3 flex-1'>
             <Image
-              className='rounded-lg object-cover'
-              width={"100%"}
-              height={"100%"}
+              className='rounded-lg object-cover w-full h-52 md:h-60'
               src={web6}
               alt='web'
             />
