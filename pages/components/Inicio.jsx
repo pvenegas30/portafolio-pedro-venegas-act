@@ -14,7 +14,7 @@ export const Inicio = () => {
           <h3 className='text-zinc-800 text-2xl py-2 font-semibold dark:text-white'>
             Desarrollador Web Full-Stack
           </h3>
-          <p className='flex justify-center items-center text-justify text-lg py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl lg:text-2xl'>
+          <p className='flex justify-center items-center text-justify text-lg py-3 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl lg:text-2xl'>
             ¡Hola! Me considero una persona creativa, responsable y con
             iniciativa. Realicé mis estudios en varios cursos profesionales y
             siempre me encuentro aprendiendo para mejorar cada vez más mis
