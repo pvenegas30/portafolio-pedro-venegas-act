@@ -16,7 +16,31 @@ a {
 }
 
 #nav {
-  box-shadow: -1px 2px 26px 1px rgba(163, 163, 163, 0.44);
-  -webkit-box-shadow: -1px 2px 26px 1px rgba(163, 163, 163, 0.44);
-  -moz-box-shadow: -1px 2px 26px 1px rgba(163, 163, 163, 0.44);
+  box-shadow: 0px 0px 26px 1px rgba(130, 130, 130, 0.44);
+  -webkit-box-shadow: 0px 0px 26px 1px rgba(130, 130, 130, 0.44);
+  -moz-box-shadow: 0px 0px 26px 1px rgba(130, 130, 130, 0.44);
+}
+
+/* ScrollBar */
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #00818a #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #00818a;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
 }
