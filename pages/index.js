@@ -4,8 +4,8 @@ import { Inicio } from './components/Inicio';
 import { Servicios } from './components/Servicios';
 import { Portafolio } from './components/Portafolio';
 import { Footer } from './components/Footer';
-import { NavBar } from './components/NavBar';
 import { Estudios } from './components/Estudios';
+import Nav from './components/navcomp/Nav';
 
 export default function Home() {
 
@@ -22,7 +22,8 @@ export default function Home() {
       </Head>
       <main className=" bg-white dark:bg-gray-900">
 
-        <NavBar setDarkMode={setDarkMode} darkMode={darkMode} />
+        <Nav setDarkMode={setDarkMode} darkMode={darkMode} />
+        {/* <NavBar setDarkMode={setDarkMode} darkMode={darkMode} /> */}
         {/* Inicio */}
 
         <Inicio />
