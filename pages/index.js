@@ -5,6 +5,7 @@ import { Servicios } from './components/Servicios';
 import { Portafolio } from './components/Portafolio';
 import { Footer } from './components/Footer';
 import { NavBar } from './components/NavBar';
+import { Estudios } from './components/Estudios';
 
 export default function Home() {
 
@@ -24,9 +25,10 @@ export default function Home() {
         <NavBar setDarkMode={setDarkMode} darkMode={darkMode} />
         {/* Inicio */}
 
-        <section className="min-h-screen">
-          <Inicio />
-        </section>
+        <Inicio />
+        {/* ESTUDIOS */}
+        <Estudios />
+
         {/* SERVICIOS */}
 
         <Servicios />
