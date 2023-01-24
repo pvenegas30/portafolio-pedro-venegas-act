@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import Head from 'next/head'
 import { useState } from 'react';
-import { Inicio } from './components/Inicio';
-import { Servicios } from './components/Servicios';
-import { Portafolio } from './components/Portafolio';
-import { Footer } from './components/Footer';
-import { NavBar } from './components/NavBar';
 import { Estudios } from './components/Estudios';
+import { Inicio } from './components/Inicio';
+import { Portafolio } from './components/Portafolio';
+import { Servicios } from './components/Servicios';
+
+
 
 export default function Home() {
 
@@ -25,7 +25,7 @@ export default function Home() {
       </Head>
       <main className=" bg-white dark:bg-gray-900 transition-colors duration-300 ease-in">
 
-        <NavBar setDarkMode={setDarkMode} darkMode={darkMode} />
+        {/* <NavBar setDarkMode={setDarkMode} darkMode={darkMode} /> */}
         {/* Inicio */}
         {/* ESTUDIOS */}
 
@@ -57,7 +57,7 @@ export default function Home() {
 
       </main>
       {/* FOOTER */}
-      <Footer />
+      <footer />
     </div>
   )
 }

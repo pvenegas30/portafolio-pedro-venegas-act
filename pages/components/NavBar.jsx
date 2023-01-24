@@ -7,10 +7,10 @@ import Link from "next/link";
 
 export const NavBar = ({ setDarkMode, darkMode }) => {
   let Links = [
-    { name: "INICIO", link: "/#inicio" },
-    { name: "PORTAFOLIO", link: "/#portafolio" },
-    { name: "SERVICIOS", link: "/#servicios" },
-    { name: "CONTACTO", link: "/#contecto" },
+    { name: "INICIO", link: "/home" },
+    { name: "PORTAFOLIO", link: "/portofolio" },
+    { name: "SERVICIOS", link: "/services" },
+    { name: "CONTACTO", link: "/contact" },
   ];
   let [open, setOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
@@ -41,40 +41,19 @@ export const NavBar = ({ setDarkMode, darkMode }) => {
             open ? "top-[70px] " : "top-[-490px]"
           }`}
         >
-          {/* {Links.map((link) => (
+          {Links.map((link) => (
             <li
               key={link.name}
               className='w-full md:ml-5 text-xl md:text-lg md:my-0 my-7'
             >
-              <a
+              <Link
                 href={link.link}
                 className=' text-black hover:text-teal-600 dark:text-white duration-500'
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
-          ))} */}
-
-          <li className='w-full md:ml-5 text-xl md:text-lg md:my-0 my-7'>
-            <Link href='#inicio' onClick={() => setNavbar(!navbar)}>
-              Inicio
-            </Link>
-          </li>
-          <li className='w-full md:ml-5 text-xl md:text-lg md:my-0 my-7'>
-            <Link href='#portafolio' onClick={() => setNavbar(!navbar)}>
-              Portafolio
-            </Link>
-          </li>
-          <li className='w-full md:ml-5 text-xl md:text-lg md:my-0 my-7'>
-            <Link href='#services' onClick={() => setNavbar(!navbar)}>
-              Servicios
-            </Link>
-          </li>
-          <li className='w-full md:ml-5 text-xl md:text-lg md:my-0 my-7'>
-            <Link href='#contact' onClick={() => setNavbar(!navbar)}>
-              Contacto
-            </Link>
-          </li>
+          ))}
         </ul>
       </div>
       {/* ICONS BAR */}
