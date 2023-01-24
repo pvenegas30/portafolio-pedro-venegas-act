@@ -27,17 +27,33 @@ export default function Home() {
 
         <NavBar setDarkMode={setDarkMode} darkMode={darkMode} />
         {/* Inicio */}
-
-        <Inicio />
         {/* ESTUDIOS */}
-        <Estudios />
 
-        {/* SERVICIOS */}
+        <section
+          id="inicio"
+        >
+          <Inicio />
 
-        <Servicios />
-
+          <Estudios />
+        </section>
         {/* PORTAFOLIO */}
-        <Portafolio />
+        <section id="portafolio">
+          <Portafolio />
+        </section>
+        {/* SERVICIOS */}
+        <section
+          id="services"
+        >
+          <Servicios />
+        </section>
+
+        <section
+          id="contact"
+        >
+          <h1 className="m-auto font-waterfall text-7xl text-white font-bold">
+            Contacto
+          </h1>
+        </section>
 
       </main>
       {/* FOOTER */}

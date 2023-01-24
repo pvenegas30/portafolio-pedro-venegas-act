@@ -3,16 +3,17 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import Image from "next/image";
 import logo from "../../public/logoBlue.png";
 import { AiOutlineArrowUp } from "react-icons/ai";
+import Link from "next/link";
 
 export const NavBar = ({ setDarkMode, darkMode }) => {
   let Links = [
-    { name: "INICIO", link: "/" },
-    { name: "PORTAFOLIO", link: "/" },
-    { name: "SERVICIOS", link: "/" },
-    { name: "CONTACTO", link: "/" },
+    { name: "INICIO", link: "/#inicio" },
+    { name: "PORTAFOLIO", link: "/#portafolio" },
+    { name: "SERVICIOS", link: "/#servicios" },
+    { name: "CONTACTO", link: "/#contecto" },
   ];
   let [open, setOpen] = useState(false);
-
+  const [navbar, setNavbar] = useState(false);
   return (
     <nav
       id='nav'
@@ -40,7 +41,7 @@ export const NavBar = ({ setDarkMode, darkMode }) => {
             open ? "top-[70px] " : "top-[-490px]"
           }`}
         >
-          {Links.map((link) => (
+          {/* {Links.map((link) => (
             <li
               key={link.name}
               className='w-full md:ml-5 text-xl md:text-lg md:my-0 my-7'
@@ -52,7 +53,28 @@ export const NavBar = ({ setDarkMode, darkMode }) => {
                 {link.name}
               </a>
             </li>
-          ))}
+          ))} */}
+
+          <li className='w-full md:ml-5 text-xl md:text-lg md:my-0 my-7'>
+            <Link href='#inicio' onClick={() => setNavbar(!navbar)}>
+              Inicio
+            </Link>
+          </li>
+          <li className='w-full md:ml-5 text-xl md:text-lg md:my-0 my-7'>
+            <Link href='#portafolio' onClick={() => setNavbar(!navbar)}>
+              Portafolio
+            </Link>
+          </li>
+          <li className='w-full md:ml-5 text-xl md:text-lg md:my-0 my-7'>
+            <Link href='#services' onClick={() => setNavbar(!navbar)}>
+              Servicios
+            </Link>
+          </li>
+          <li className='w-full md:ml-5 text-xl md:text-lg md:my-0 my-7'>
+            <Link href='#contact' onClick={() => setNavbar(!navbar)}>
+              Contacto
+            </Link>
+          </li>
         </ul>
       </div>
       {/* ICONS BAR */}
