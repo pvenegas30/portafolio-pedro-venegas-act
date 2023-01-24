@@ -13,7 +13,6 @@ export const NavBar = ({ setDarkMode, darkMode }) => {
     { name: "CONTACTO", link: "/contact" },
   ];
   let [open, setOpen] = useState(false);
-  const [navbar, setNavbar] = useState(false);
   return (
     <nav
       id='nav'
