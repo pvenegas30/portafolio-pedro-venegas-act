@@ -27,7 +27,7 @@ a {
 /* Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: #009792 #ffffff;
+  scrollbar-color: #00818a #ffffff;
 }
 
 /* Chrome, Edge, and Safari */
@@ -40,11 +40,7 @@ a {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #009792;
+  background-color: #00818a;
   border-radius: 10px;
   border: 3px solid #ffffff;
-}
-
-#nameTitular {
-  font-family: "Poppins", sans-serif;
 }

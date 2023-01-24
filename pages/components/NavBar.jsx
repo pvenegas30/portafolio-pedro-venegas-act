@@ -24,7 +24,7 @@ export const NavBar = ({ setDarkMode, darkMode }) => {
             src={logo}
             alt='logo'
             title='Pedro Venegas'
-            className='w-12 h-12 object-cover md:ml-10'
+            className='w-12 h-12 object-cover md:ml-6'
           />
 
           <span className='flex flex-col pl-3 font-semibold '>
