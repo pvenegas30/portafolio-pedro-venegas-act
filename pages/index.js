@@ -5,8 +5,8 @@ import { Inicio } from './components/Inicio';
 import { Servicios } from './components/Servicios';
 import { Portafolio } from './components/Portafolio';
 import { Footer } from './components/Footer';
-import { NavBar } from './components/NavBar';
 import { Estudios } from './components/Estudios';
+import { NavBar } from './components/NavBar';
 
 export default function Home() {
 
@@ -23,6 +23,7 @@ export default function Home() {
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
       </Head>
+
       <main className=" bg-white dark:bg-gray-900 transition-colors duration-300 ease-in">
 
         <NavBar setDarkMode={setDarkMode} darkMode={darkMode} />

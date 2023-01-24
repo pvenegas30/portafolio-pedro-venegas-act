@@ -6,10 +6,14 @@ import cert02 from "../../public/cert-studies/certificado-udemy-02.jpg";
 export const Estudios = () => {
   return (
     <div className='w-full h-full px-10 pb-64 lg:px-[140px]'>
-      <div>
-        <h2 className=' text-center text-3xl py-10 dark:text-white'>
+      <div className='py-10'>
+        <h2 className=' text-center text-3xl pt-5 pb-2 dark:text-white'>
           Estudios
         </h2>
+        <p className='text-gray-800 text-center text-lg pt-3 pb-3 md:pb-5 dark:text-white'>
+          He aprendido de manera autodidacta y realicé dos cursos profesionales
+          durante 2022 para perfeccionar mis conocimientos.
+        </p>
       </div>
 
       <div className='flex flex-col gap-y-10 gap-x-10 md:flex-row md:justify-between md:items-center'>
