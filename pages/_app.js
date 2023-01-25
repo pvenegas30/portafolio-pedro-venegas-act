@@ -1,15 +1,18 @@
 import "../styles/globals.css";
 import "../styles/tailwind.css";
-import { useState } from "react";
 import { NavBar } from "./components/NavBar";
 import { Footer } from "./components/Footer";
+import { useState } from "react";
 
 function MyApp({ Component, pageProps }) {
   const [darkMode, setDarkMode] = useState(false);
 
+  const darkOn = () => {
+    setDarkMode(!darkMode);
+  };
   return (
-    <div>
-      <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
+    <div className={darkMode ? "dark" : ""} >
+      <NavBar darkOn={darkOn} />
       <Component {...pageProps} />
       <footer>
         <Footer />

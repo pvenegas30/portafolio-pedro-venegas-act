@@ -5,14 +5,16 @@ import logo from "../../public/logoBlue.png";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import Link from "next/link";
 
-export const NavBar = ({ setDarkMode, darkMode }) => {
+export const NavBar = ({ darkOn }) => {
   let Links = [
     { name: "INICIO", link: "/home" },
     { name: "PORTAFOLIO", link: "/portofolio" },
     { name: "SERVICIOS", link: "/services" },
     { name: "CONTACTO", link: "/contact" },
   ];
+
   let [open, setOpen] = useState(false);
+
   return (
     <nav
       id='nav'
@@ -62,7 +64,7 @@ export const NavBar = ({ setDarkMode, darkMode }) => {
       >
         <div className='flex items-center justify-center text-2xl'>
           <BsFillMoonStarsFill
-            onClick={() => setDarkMode(!darkMode)}
+            onClick={darkOn}
             className='cursor-pointer hover:text-teal-600 transition-all duration-200 ease-in'
           />
         </div>
