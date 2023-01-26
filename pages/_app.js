@@ -3,6 +3,7 @@ import "../styles/tailwind.css";
 import { NavBar } from "./components/NavBar";
 import { Footer } from "./components/Footer";
 import { useState } from "react";
+import Navbar from "./components/NavBar02";
 
 function MyApp({ Component, pageProps }) {
   const [darkMode, setDarkMode] = useState(false);
@@ -13,7 +14,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <div className={darkMode ? "dark" : ""} >
       <div className="dark:bg-gray-900 transition-colors duration-300 ease-in">
-        <NavBar darkOn={darkOn} />
+        {/* <NavBar darkOn={darkOn} /> */}
+        <Navbar darkOn={darkOn} />
         <Component {...pageProps} />
         <footer>
           <Footer />

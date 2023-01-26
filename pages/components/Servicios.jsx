@@ -7,12 +7,6 @@ import creativity from "../../public/diseño.png";
 export const Servicios = () => {
   return (
     <section className='py-20 w'>
-      <div>
-        <h3 className='flex justify-center text-3xl py-1 dark:text-white '>
-          Servicios
-        </h3>
-      </div>
-
       <div className='lg:flex gap-10 px-8 md:px-14'>
         <div className='text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1'>
           <Image

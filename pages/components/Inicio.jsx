@@ -38,7 +38,7 @@ export const Inicio = () => {
             <AiFillGithub title='GitHub Pedro Venegas' />
           </a>
           <a
-            href='https://www.linkedin.com/in/pedro-venegas-086bb8205/'
+            href='https://www.linkedin.com/in/pedro-venegas-086bb8205'
             className='cursor-pointer hover:text-teal-600 ease-in duration-100'
             target='_blank'
             rel='noreferrer'
@@ -58,7 +58,7 @@ export const Inicio = () => {
         </div>
       </div>
       {/* Botón Download */}
-      <div className='w-full flex justify-center items-center gap-x-5 md:gap-x-10'>
+      <div className='w-full flex justify-center items-center gap-x-5 md:justify-end md:pr-[12%] lg:pr-[18%] md:gap-x-10'>
         <Link href='#' download='Curriculum'>
           <button className='cursor-pointer my-10 bg-teal-600 text-white font-semibold tracking-wide p-3 rounded-3xl text-sm md:text-md	 md:px-5 dark:bg-teal-400 dark:text-black'>
             Descargar CV

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { AiOutlineArrowUp } from "react-icons/ai";
 import Image from "next/image";
 import logo from "../../public/logoBlue.png";
 import logoW from "../../public/logoWhite.png";
-import { AiOutlineArrowUp } from "react-icons/ai";
 import Link from "next/link";
 
 export const NavBar = ({ darkOn }) => {
@@ -38,8 +38,8 @@ export const NavBar = ({ darkOn }) => {
           />
 
           <span className='flex flex-col pl-3 font-semibold '>
-            <p className='text-black hidden md:block'>PEDRO</p>
-            <p className='text-black hidden md:block'>VENEGAS</p>
+            <p className='text-black dark:text-white hidden md:block'>PEDRO</p>
+            <p className='text-black dark:text-white hidden md:block'>VENEGAS</p>
           </span>
         </Link>
       </div>
@@ -66,11 +66,11 @@ export const NavBar = ({ darkOn }) => {
         </ul>
       </div>
       {/* ICONS BAR */}
-      <div
-        className='flex items-center justify-center gap-x-5 md:mr-5'
-        title='Modo Oscuro'
-      >
-        <div className='flex items-center justify-center text-2xl'>
+      <div className='flex items-center justify-center gap-x-5 md:mr-5'>
+        <div
+          className='flex items-center justify-center text-2xl'
+          title='Modo Oscuro'
+        >
           <BsFillMoonStarsFill
             onClick={darkOn}
             className='cursor-pointer hover:text-teal-600 transition-all duration-200 ease-in'

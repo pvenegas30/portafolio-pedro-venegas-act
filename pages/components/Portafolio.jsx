@@ -13,7 +13,7 @@ export const Portafolio = () => {
       <section className='py-10 md:px-20'>
         <div>
           <h3 className=' text-center text-3xl py-1 dark:text-white '>
-            Portafolio
+            Mis Proyectos
           </h3>
         </div>
         <div className='flex flex-col gap-10 p-10 md:gap-20 lg:flex-row lg:flex-wrap'>
