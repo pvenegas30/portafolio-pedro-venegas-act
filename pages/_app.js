@@ -12,11 +12,13 @@ function MyApp({ Component, pageProps }) {
   };
   return (
     <div className={darkMode ? "dark" : ""} >
-      <NavBar darkOn={darkOn} />
-      <Component {...pageProps} />
-      <footer>
-        <Footer />
-      </footer>
+      <div className="dark:bg-gray-900 transition-colors duration-300 ease-in">
+        <NavBar darkOn={darkOn} />
+        <Component {...pageProps} />
+        <footer>
+          <Footer />
+        </footer>
+      </div>
     </div>
   );
 }

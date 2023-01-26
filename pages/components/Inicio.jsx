@@ -2,13 +2,17 @@ import React from "react";
 import Image from "next/image";
 import perfil from "../../public/perfil-home.jpg";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import Link from "next/link";
+// import Curriculum from "../../public/cert-studies/cv-developer.pdf";
 
 export const Inicio = () => {
   return (
     <div className='w-full'>
       <div className='text-center px-14 pt-28 md:pt-40 md:px-10 md:flex md:flex-row-reverse md:justify-between lg:pt-32 lg:px-20'>
+        {/* Sobre Mi */}
+
         <div className='md:mr-5 md:pt-8'>
-          <h2 className='text-4xl py-2 text-teal-600 font-medium dark:text-teal-400 '>
+          <h2 className='text-4xl py-2 text-teal-600 font-medium dark:text-teal-400'>
             Pedro Venegas
           </h2>
           <h3 className='text-zinc-800 text-2xl py-2 font-semibold dark:text-white'>
@@ -21,6 +25,8 @@ export const Inicio = () => {
             habilidades.
           </p>
         </div>
+
+        {/* LinkedIn y GitHub */}
 
         <div className='text-6xl flex justify-center gap-16 py-3 text-gray-600  dark:text-gray-400 md:px-10 md:text-5xl md:flex-col lg:text-7xl'>
           <a
@@ -41,6 +47,8 @@ export const Inicio = () => {
           </a>
         </div>
 
+        {/* Perfil img */}
+
         <div className='flex justify-center items-center mx-auto w-56 h-56 mt-5 md:pt-5 md:h-72 md:w-72 md:mx-0 lg:h-[300] lg:w-[300]'>
           <Image
             src={perfil}
@@ -48,6 +56,19 @@ export const Inicio = () => {
             className='rounded-full object-cover '
           />
         </div>
+      </div>
+      {/* Botón Download */}
+      <div className='w-full flex justify-center items-center gap-x-5 md:gap-x-10'>
+        <Link href='#' download='Curriculum'>
+          <button className='cursor-pointer my-10 bg-teal-600 text-white font-semibold tracking-wide p-3 rounded-3xl text-sm md:text-md	 md:px-5 dark:bg-teal-400 dark:text-black'>
+            Descargar CV
+          </button>
+        </Link>
+        <Link href='/contact'>
+          <button className='cursor-pointer my-10 bg-teal-600 text-white font-semibold tracking-wide py-3 px-4 rounded-3xl text-sm md:text-md md:px-5 dark:bg-teal-400 dark:text-black'>
+            Contáctame
+          </button>
+        </Link>
       </div>
     </div>
   );
