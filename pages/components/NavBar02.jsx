@@ -95,7 +95,7 @@ const Navbar = ({ darkOn }) => {
             <li className='ml-14 md:ml-5 text-xl md:text-lg md:my-0 my-7'>
               <Link
                 className=' text-black hover:text-teal-400 focus:text-teal-600 dark:hover:text-teal-200 dark:focus:text-teal-400 dark:text-white duration-500'
-                href='/#contact'
+                href='/contact'
               >
                 Contacto
               </Link>
