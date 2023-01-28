@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import perfil from "../../public/perfil-home.jpg";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import ButtonPDF from "./ButtonPDF";
 import Link from "next/link";
-// import Curriculum from "../../public/cert-studies/cv-developer.pdf";
 
 export const Inicio = () => {
   return (
@@ -59,13 +59,10 @@ export const Inicio = () => {
       </div>
       {/* Botón Download */}
       <div className='w-full flex justify-center items-center gap-x-5 md:justify-end md:pr-[12%] lg:pr-[18%] md:gap-x-10'>
-        <Link href='#' download='Curriculum'>
-          <button className='cursor-pointer my-10 bg-teal-600 text-white font-semibold tracking-wide p-3 rounded-3xl text-sm md:text-md	 md:px-5 dark:bg-teal-400 dark:text-black'>
-            Descargar CV
-          </button>
-        </Link>
+        <ButtonPDF />
+
         <Link href='/contact'>
-          <button className='cursor-pointer my-10 bg-teal-600 text-white font-semibold tracking-wide py-3 px-4 rounded-3xl text-sm md:text-md md:px-5 dark:bg-teal-400 dark:text-black'>
+          <button className='cursor-pointer my-10 bg-teal-600 text-white font-semibold tracking-wide py-3 px-4 rounded-3xl text-sm md:text-md md:px-5 hover:bg-teal-700 active:bg-teal-800 dark:bg-teal-400 dark:text-black'>
             Contáctame
           </button>
         </Link>

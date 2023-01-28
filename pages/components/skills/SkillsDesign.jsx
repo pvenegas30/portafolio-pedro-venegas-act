@@ -8,7 +8,7 @@ import Figma from "../../../public/skills/Figma.png";
 
 const SkillsDesign = () => {
   return (
-    <div className='flex flex-wrap flex-col justify-center items-center gap-[10px]'>
+    <div className='flex flex-wrap flex-col justify-center items-center gap-[10px] gap-y-[30px]'>
       <div
         title='Figma 90%'
         className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'

@@ -144,23 +144,28 @@ const Navbar = ({ darkOn }) => {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-gray-900 p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
           <div>
             <div className='flex w-full items-center justify-between'>
-              <Link href='/'>
-                <Image
-                  src={NavLogo}
-                  alt='logo'
-                  title='Pedro Venegas'
-                  className='w-12 h-12 object-cover md:ml-6 dark:hidden'
-                />
-              </Link>
+              <Image
+                src={NavLogo}
+                alt='NavLogo'
+                title='Pedro Venegas'
+                className='w-12 h-12 object-cover md:ml-6 dark:hidden'
+              />
+
+              <Image
+                src={NavLogoW}
+                alt='NavLogoW'
+                title='Pedro Venegas'
+                className='w-12 h-12 object-cover hidden md:ml-6 dark:block'
+              />
               <div
                 onClick={handleNav}
-                className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
+                className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer  dark:bg-white dark:shadow-gray-800'
               >
                 <AiOutlineClose />
               </div>
@@ -170,22 +175,34 @@ const Navbar = ({ darkOn }) => {
           <div className='py-14 flex flex-col'>
             <ul className='uppercase'>
               <Link href='/'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm '>
+                <li
+                  onClick={() => setNav(false)}
+                  className='py-4 text-md font-bold tracking-widest dark:text-white'
+                >
                   Inicio
                 </li>
               </Link>
               <Link href='/portofolio'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li
+                  onClick={() => setNav(false)}
+                  className='py-4 text-md font-bold tracking-widest dark:text-white'
+                >
                   Portafolio
                 </li>
               </Link>
               <Link href='/services'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li
+                  onClick={() => setNav(false)}
+                  className='py-4 text-md font-bold tracking-widest dark:text-white'
+                >
                   Servicios
                 </li>
               </Link>
               <Link href='/contact'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li
+                  onClick={() => setNav(false)}
+                  className='py-4 text-md font-bold tracking-widest dark:text-white'
+                >
                   Contactos
                 </li>
               </Link>
@@ -197,7 +214,7 @@ const Navbar = ({ darkOn }) => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 dark:bg-white dark:shadow-gray-800'>
                     <FaLinkedinIn />
                   </div>
                 </Link>
@@ -206,28 +223,20 @@ const Navbar = ({ darkOn }) => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 dark:bg-white dark:shadow-gray-800'>
                     <FaGithub />
                   </div>
                 </Link>
                 <Link href='/contact'>
                   <div
                     onClick={() => setNav(!nav)}
-                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 dark:bg-white dark:shadow-gray-800'
                   >
                     <AiOutlineMail />
                   </div>
                 </Link>
-                <Link href='/resume'>
-                  <div
-                    onClick={() => setNav(!nav)}
-                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
-                  >
-                    <BsFillPersonLinesFill />
-                  </div>
-                </Link>
               </div>
-              <p className='text-center font-medium text-md text-teal-600 '>
+              <p className='text-center font-medium text-md text-teal-600 dark:text-white'>
                 Pedro Venegas ©2023
               </p>
             </div>

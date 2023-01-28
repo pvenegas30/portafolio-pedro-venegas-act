@@ -8,12 +8,16 @@ import Skills from "./skills/Skills";
 import SkillsBack from "./skills/SkillsBack";
 import SkillsDesign from "./skills/SkillsDesign";
 import SkillsArq from "./skills/SkillsArq";
+import ButtonPDF2 from "./ButtonPDF2";
+import ButtonPDF from "./ButtonPDF";
+import ButtonPDF3 from "./ButtonPDF3";
 
 export const Servicios = () => {
   return (
     <section className='py-20 flex flex-wrap justify-center'>
+      {/* DESARROLLADOR */}
       <div className='lg:flex gap-10 px-8 md:px-14'>
-        <div className='text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1'>
+        <div className='text-center shadow-lg p-10 rounded-xl my-10 bg-white dark:bg-gray-100 flex-1'>
           <Image
             src={design}
             alt='design'
@@ -33,9 +37,13 @@ export const Servicios = () => {
           <h4 className='py-4 text-teal-600 font-bold mt-3'>Back-End</h4>
 
           <SkillsBack />
+
+          <ButtonPDF />
         </div>
 
-        <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1'>
+        {/* Creación de Contenido */}
+
+        <div className='text-center shadow-lg p-10 rounded-xl my-10 bg-white dark:bg-gray-100 flex-1'>
           <Image
             src={content}
             alt='code'
@@ -53,7 +61,7 @@ export const Servicios = () => {
           <h4 className='py-4 text-teal-600 font-bold'>
             Webs en las que he participado
           </h4>
-          <ul className=' text-teal-600'>
+          <ul className='pt-10 flex justify-center items-center flex-col text-teal-600'>
             <li className='mb-2'>
               <a
                 href='https://tuapppara.com/autor/pedro'
@@ -118,9 +126,13 @@ export const Servicios = () => {
               </a>
             </li>
           </ul>
+
+          <div className='pt-[60px]'>
+            <ButtonPDF2 />
+          </div>
         </div>
         {/* DISEÑÓS */}
-        <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1'>
+        <div className='text-center shadow-lg p-10 rounded-xl my-10 bg-white dark:bg-gray-100 flex-1'>
           <Image
             src={creativity}
             alt='creatibity'
@@ -134,13 +146,13 @@ export const Servicios = () => {
             utilizando los programas más adecuados para cumplir con objetivos
             Front-End.
           </p>
-          <h4 className='py-4 text-teal-600 font-bold'>Programas de diseño</h4>
+          <h4 className='py-6 text-teal-600 font-bold'>Programas de diseño</h4>
           <SkillsDesign />
         </div>
       </div>
 
       {/* ARQUITECTURA */}
-      <div className='w-[85%] lg:w-[40%] text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+      <div className='w-[85%] lg:w-[40%] text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-100'>
         <Image
           src={arq}
           alt='arq'
@@ -172,6 +184,7 @@ export const Servicios = () => {
         <h4 className='py-4 text-teal-600 font-bold'>Programas de diseño</h4>
 
         <SkillsArq />
+        <ButtonPDF3 />
       </div>
     </section>
   );
