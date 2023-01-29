@@ -135,7 +135,7 @@ export const Servicios = () => {
           <Image
             src={creativity}
             alt='creatibity'
-            idth={100}
+            width={100}
             height={100}
             className='mx-auto'
           />
@@ -155,7 +155,7 @@ export const Servicios = () => {
         <Image
           src={arq}
           alt='arq'
-          idth={100}
+          width={100}
           height={100}
           className='mx-auto'
         />

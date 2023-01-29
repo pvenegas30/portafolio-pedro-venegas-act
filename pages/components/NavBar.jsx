@@ -8,6 +8,7 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 import NavLogo from "../../public/logoBlue.png";
 import NavLogoW from "../../public/logoWhite.png";
 import { useTranslation } from "react-i18next";
+import Idioma from "../Idioma";
 
 const NavBar = ({ darkOn }) => {
   const [nav, setNav] = useState(false);
@@ -126,6 +127,10 @@ const NavBar = ({ darkOn }) => {
             >
               <AiOutlineArrowUp />
             </a>
+          </div>
+
+          <div>
+            <Idioma />
           </div>
           {/* Hamburger Icon */}
           <div

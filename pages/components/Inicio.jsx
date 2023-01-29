@@ -4,7 +4,6 @@ import perfil from "../../public/perfil-home.jpg";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import ButtonPDF from "./ButtonPDF";
 import Link from "next/link";
-import Idioma from "../Idioma";
 import { useTranslation } from "react-i18next";
 
 export const Inicio = () => {

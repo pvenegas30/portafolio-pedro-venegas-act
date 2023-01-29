@@ -6,7 +6,7 @@
 
    "contact.home": "Contact me",
    "home.presentation": "Hello! I consider myself a creative person, responsible and with initiative. I completed my studies in various professional courses and I always find myself learning to improve more and more my Skills.",
-   "home.developer": "Developer Web Full-Stack",
+   "home.developer": "Full Stack Web Developer",
    "home.learn.react": "Learn React",
    "home.button.change": "Change Language",
 
@@ -37,6 +37,9 @@
    "contact.tel": "Phone Number",
    "contact.message": "Message",
    "contact.subject": "Subject",
-   "contact.send": "Send Message"
+   "contact.send": "Send Message",
+
+   "more.information": "More Info",
+   "my.projects": "My Projects"
 
 }

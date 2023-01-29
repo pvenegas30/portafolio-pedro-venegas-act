@@ -9,7 +9,7 @@ export const Contacto = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className='dark:bg-gray-900  file:flex flex-col justify-center w-full h-full px-10 pb-[400px] lg:px-[140px]'>
+    <div className='dark:bg-gray-900  file:flex flex-col justify-center w-full h-full px-10 pb-[100px] lg:pb-[400px] lg:px-[140px]'>
       <div id='contact' className='w-full lg:h-screen'>
         <div className='max-w-[1240px] m-auto px-2 py-14 w-full '>
           <p className='mt-16 mb-10 text-xl tracking-widest uppercase text-teal-800 dark:text-teal-400'>

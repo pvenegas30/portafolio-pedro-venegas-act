@@ -37,6 +37,8 @@
    "contact.tel": "Teléfono",
    "contact.message": "Mensaje",
    "contact.subject": "asunto",
-   "contact.send": "Enviar Mensaje"
+   "contact.send": "Enviar Mensaje",
 
+   "more.information": "Más Información",
+   "my.projects": "Mis Proyectos"
 }

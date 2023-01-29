@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './i18n';
+import { RiEmphasis } from "react-icons/ri";
 
 function Idioma() {
 
@@ -19,8 +20,8 @@ function Idioma() {
   return (
     <div className="App">
       <header className="App-header">
-        <button className='p-4 bg-teal-600 rounded-full text-white' onClick={onChangeLanguaje}>
-          {t('home.button.change')}
+        <button title={t('home.button.change')} className='p-2 bg-teal-600 rounded-full text-white' onClick={onChangeLanguaje}>
+          <RiEmphasis />
         </button>
       </header>
     </div>
