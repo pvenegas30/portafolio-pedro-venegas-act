@@ -11,8 +11,11 @@ import SkillsArq from "./skills/SkillsArq";
 import ButtonPDF2 from "./ButtonPDF2";
 import ButtonPDF from "./ButtonPDF";
 import ButtonPDF3 from "./ButtonPDF3";
+import { useTranslation } from "react-i18next";
 
 export const Servicios = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <section className='py-20 flex flex-wrap justify-center'>
       {/* DESARROLLADOR */}
@@ -25,11 +28,10 @@ export const Servicios = () => {
             height={100}
             className='mx-auto'
           />
-          <h3 className='text-lg font-medium pt-8 pb-2'>Desarrollo web</h3>
-          <p className='py-2'>
-            Creo tu página web desde cero utilizando los lenguajes de
-            programación más adecuados.
-          </p>
+          <h3 className='text-lg font-medium pt-8 pb-2'>
+            {t("services.dev.title")}
+          </h3>
+          <p className='py-2'>{t("services.dev")}</p>
           <h4 className='py-4 text-teal-600 font-bold'>Front-End</h4>
 
           <Skills />
@@ -52,12 +54,9 @@ export const Servicios = () => {
             className='mx-auto'
           />
           <h3 className='text-lg font-medium pt-8 pb-2 '>
-            Creación de Contenido
+            {t("services.content.title")}
           </h3>
-          <p className='py-2'>
-            He trabajado para múltiples blogs de España como redactor y editor.
-            Tengo más de 4 años de experiencia en el ámbito laboral.
-          </p>
+          <p className='py-2'>{t("services.content")}</p>
           <h4 className='py-4 text-teal-600 font-bold'>
             Webs en las que he participado
           </h4>
@@ -140,13 +139,13 @@ export const Servicios = () => {
             height={100}
             className='mx-auto'
           />
-          <h3 className='text-lg font-medium pt-8 pb-2 '>Diseño</h3>
-          <p className='py-2'>
-            Domino los principios de diseño para hacer trabajos de calidad
-            utilizando los programas más adecuados para cumplir con objetivos
-            Front-End.
-          </p>
-          <h4 className='py-6 text-teal-600 font-bold'>Programas de diseño</h4>
+          <h3 className='text-lg font-medium pt-8 pb-2 '>
+            {t("services.design.title")}
+          </h3>
+          <p className='py-2'>{t("services.design")}</p>
+          <h4 className='py-6 text-teal-600 font-bold'>
+            {t("services.design.skills")}
+          </h4>
           <SkillsDesign />
         </div>
       </div>
@@ -160,16 +159,13 @@ export const Servicios = () => {
           height={100}
           className='mx-auto'
         />
-        <h3 className='text-lg font-medium pt-8 pb-2 '>Arquitectura</h3>
-        <p className='py-2'>
-          Soy profesional en arquitectura, graduado de la Universidad José
-          Antonio Páez. Estoy capacitado para crear diseños modernos con
-          respecto a edificaciones de ámbito turístico, educativo, deportivo
-          residencial y comercial.
-        </p>
+        <h3 className='text-lg font-medium pt-8 pb-2 '>
+          {t("services.arq.title")}
+        </h3>
+        <p className='py-2'>{t("services.arq")}</p>
 
         <p className='py-2'>
-          CEO de{" "}
+          {t("services.arq.ceo")}{" "}
           <a
             target='_blank'
             href='https://nova-architecture.netlify.app/'
@@ -178,10 +174,11 @@ export const Servicios = () => {
           >
             Nova Architecture
           </a>
-          , una nueva firma de arquitectos enfocados en arquitectura
-          contemporánea.
+          {t("services.arq.part")}
         </p>
-        <h4 className='py-4 text-teal-600 font-bold'>Programas de diseño</h4>
+        <h4 className='py-4 text-teal-600 font-bold'>
+          {t("services.design.skills")}
+        </h4>
 
         <SkillsArq />
         <ButtonPDF3 />

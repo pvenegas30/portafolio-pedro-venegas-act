@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const ButtonPDF = () => {
   const onButtonClick = () => {
@@ -12,13 +13,15 @@ const ButtonPDF = () => {
       });
     });
   };
+
+  const { t, i18n } = useTranslation();
   return (
     <>
       <button
         onClick={onButtonClick}
         className='cursor-pointer my-10 bg-teal-600 text-white font-semibold tracking-wide p-3 rounded-3xl text-sm md:text-md	 md:px-5 hover:bg-teal-700 active:bg-teal-800 dark:bg-teal-400 dark:text-black'
       >
-        Descargar CV
+        {t("download.cv")}
       </button>
     </>
   );

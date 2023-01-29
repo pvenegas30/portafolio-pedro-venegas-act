@@ -7,6 +7,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import NavLogo from "../../public/logoBlue.png";
 import NavLogoW from "../../public/logoWhite.png";
+import { useTranslation } from "react-i18next";
 
 const NavBar = ({ darkOn }) => {
   const [nav, setNav] = useState(false);
@@ -27,6 +28,10 @@ const NavBar = ({ darkOn }) => {
     };
     window.addEventListener("scroll", handleShadow);
   }, []);
+
+  // IDIOMA
+
+  const { t, i18n } = useTranslation();
 
   return (
     <div
@@ -72,7 +77,7 @@ const NavBar = ({ darkOn }) => {
                 className='text-xl text-black hover:text-teal-400 focus:text-teal-600 dark:hover:text-teal-200 dark:focus:text-teal-400 dark:text-white duration-500'
                 href='/'
               >
-                Inicio
+                {t("navbar.home")}
               </Link>
             </li>
             <li className='ml-14 md:ml-5 md:text-lg md:my-0 my-7'>
@@ -80,7 +85,7 @@ const NavBar = ({ darkOn }) => {
                 className='text-xl text-black hover:text-teal-400 focus:text-teal-600 dark:hover:text-teal-200 dark:focus:text-teal-400 dark:text-white duration-500'
                 href='/portofolio'
               >
-                Portafolio
+                {t("navbar.portofolio")}
               </Link>
             </li>
             <li className='ml-14 md:ml-5 md:text-lg md:my-0 my-7'>
@@ -88,7 +93,7 @@ const NavBar = ({ darkOn }) => {
                 className='text-xl text-black hover:text-teal-400 focus:text-teal-600 dark:hover:text-teal-200 dark:focus:text-teal-400 dark:text-white duration-500'
                 href='/services'
               >
-                Servicios
+                {t("navbar.services")}
               </Link>
             </li>
             <li className='ml-14 md:ml-5 md:text-lg md:my-0 my-7'>
@@ -96,7 +101,7 @@ const NavBar = ({ darkOn }) => {
                 className='text-xl text-black hover:text-teal-400 focus:text-teal-600 dark:hover:text-teal-200 dark:focus:text-teal-400 dark:text-white duration-500'
                 href='/contact'
               >
-                Contacto
+                {t("navbar.contact")}
               </Link>
             </li>
           </ul>
@@ -178,7 +183,7 @@ const NavBar = ({ darkOn }) => {
                   onClick={() => setNav(false)}
                   className='py-4 text-md font-bold tracking-widest dark:text-white'
                 >
-                  Inicio
+                  {t("navbar.home")}
                 </li>
               </Link>
               <Link href='/portofolio'>
@@ -186,7 +191,7 @@ const NavBar = ({ darkOn }) => {
                   onClick={() => setNav(false)}
                   className='py-4 text-md font-bold tracking-widest dark:text-white'
                 >
-                  Portafolio
+                  {t("navbar.portofolio")}
                 </li>
               </Link>
               <Link href='/services'>
@@ -194,7 +199,7 @@ const NavBar = ({ darkOn }) => {
                   onClick={() => setNav(false)}
                   className='py-4 text-md font-bold tracking-widest dark:text-white'
                 >
-                  Servicios
+                  {t("navbar.services")}
                 </li>
               </Link>
               <Link href='/contact'>
@@ -202,7 +207,7 @@ const NavBar = ({ darkOn }) => {
                   onClick={() => setNav(false)}
                   className='py-4 text-md font-bold tracking-widest dark:text-white'
                 >
-                  Contactos
+                  {t("navbar.contact")}
                 </li>
               </Link>
             </ul>

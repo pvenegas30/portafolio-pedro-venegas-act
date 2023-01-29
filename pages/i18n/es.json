@@ -1,0 +1,42 @@
+{
+   "navbar.home": "Inicio",
+   "navbar.portofolio": "Portafolio",
+   "navbar.services": "Servicios",
+   "navbar.contact": "Contacto",
+
+   "contact.home": "Contáctame",
+   "home.presentation": "¡Hola! Me considero una persona creativa, responsable y con iniciativa. Realicé mis estudios en varios cursos profesionales y siempre me encuentro aprendiendo para mejorar cada vez más mis habilidades. ",
+   "home.developer": "Desarrollador Web Full-Stack",
+   "home.learn.react": "Aprende React",
+   "home.button.change": "Cambiar Idioma",
+
+   "download.cv": "Descargar CV",
+
+   "services.dev": "Creo tu página web desde cero utilizando los lenguajes de programación más adecuados.",
+   "services.dev.title": "Desarrollo Web",
+
+   "services.content.title": "Creación de contenido",
+   "services.content": "He trabajado para múltiples blogs de España como redactor y editor. Tengo más de 4 años de experiencia en el ámbito laboral.",
+
+   "services.design.title": "Diseño",
+   "services.design": "Domino los principios de diseño para hacer trabajos de calidad utilizando los programas más adecuados para cumplir con objetivos Front-End.",
+   "services.design.skills": "Programas usados",
+
+   "services.arq.title": "Arquitectura",
+   "services.arq": "Soy profesional en arquitectura, graduado de la Universidad José Antonio Páez. Estoy capacitado para crear diseños modernos con respecto a edificaciones de ámbito turístico, educativo, deportivo residencial y comercial.",
+   "services.arq.ceo": "CEO de",
+   "services.arq.part": ", una nueva firma de arquitectos enfocados en arquitectura contemporánea.",
+
+   "contact.description": "Soy un desarrollador web que siempre se mantiene aprendiendo cosas nuevas. Crecer como profesional es una de mis metas, así que ninguna idea es tan descabellada como para que sea imposible. ¿Qué tienes en mente?",
+   "contact.title": "Contacto",
+   "contact.dev.title": "Desarrollador Front-End",
+   "contact.phrase": "Establecer objetivos es el primer paso para convertir lo invisible en lo visible",
+   "contact.withme": "¡Contácta conmigo!",
+
+   "contact.name": "Nombre",
+   "contact.tel": "Teléfono",
+   "contact.message": "Mensaje",
+   "contact.subject": "asunto",
+   "contact.send": "Enviar Mensaje"
+
+}

@@ -3,8 +3,11 @@ import React from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import ContactImg from "../../public/03.png";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export const Contacto = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className='flex flex-col justify-center w-full h-full px-10 pb-[400px] lg:px-[140px]'>
       <div id='contact' className='w-full lg:h-screen'>
@@ -29,25 +32,23 @@ export const Contacto = () => {
                     Pedro Venegas
                   </h2>
                   <p className='text-md font-bold text-gray-600'>
-                    Desarrollador Front-End
+                    {t("contact.dev.title")}
                   </p>
 
                   <p className='py-4 text-justify'>
-                    Soy un desarrollador web que siempre se mantiene aprendiendo
-                    cosas nuevas. Crecer como profesional es una de mis metas,
-                    así que ninguna idea es tan descabellada como para que sea
-                    imposible. ¿Qué tienes en mente?
+                    {t("contact.description")}
                   </p>
                   <p className='text-right mr-[10px] py-4 italic text-gray-500 text-sm'>
-                    {'"'}Establecer objetivos es el primer paso para convertir
-                    lo invisible en lo visible{'"'}.
+                    {'"'}
+                    {t("contact.phrase")}
+                    {'"'}.
                   </p>
                   <p className='text-right mr-[10px] py-4 italic text-gray-500 text-sm'>
                     - Tony Robbins.
                   </p>
                 </div>
                 <div>
-                  <p className='text-center pt-8 pb-4'>¡Contacta conmigo!</p>
+                  <p className='text-center pt-8 pb-4'>{t("contact.withme")}</p>
                   <div className='flex items-center justify-center gap-x-10 py-4'>
                     <Link
                       href='https://www.linkedin.com/in/pedro-venegas-086bb8205'
@@ -82,7 +83,9 @@ export const Contacto = () => {
                 >
                   <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                     <div className='flex flex-col'>
-                      <label className='uppercase text-sm py-2'>Nombre</label>
+                      <label className='uppercase text-sm py-2'>
+                        {t("contact.name")}
+                      </label>
                       <input
                         className='border-2 rounded-lg p-3 flex border-gray-300'
                         type='text'
@@ -90,7 +93,9 @@ export const Contacto = () => {
                       />
                     </div>
                     <div className='flex flex-col'>
-                      <label className='uppercase text-sm py-2'>Teléfono</label>
+                      <label className='uppercase text-sm py-2'>
+                        {t("contact.tel")}
+                      </label>
                       <input
                         className='border-2 rounded-lg p-3 flex border-gray-300'
                         type='text'
@@ -107,7 +112,9 @@ export const Contacto = () => {
                     />
                   </div>
                   <div className='flex flex-col py-2'>
-                    <label className='uppercase text-sm py-2'>Asunto</label>
+                    <label className='uppercase text-sm py-2'>
+                      {t("contact.subject")}
+                    </label>
                     <input
                       className='border-2 rounded-lg p-3 flex border-gray-300'
                       type='text'
@@ -115,7 +122,9 @@ export const Contacto = () => {
                     />
                   </div>
                   <div className='flex flex-col py-2'>
-                    <label className='uppercase text-sm py-2'>Mensaje</label>
+                    <label className='uppercase text-sm py-2'>
+                      {t("contact.message")}
+                    </label>
                     <textarea
                       className='resize-none border-2 rounded-lg p-3 border-gray-300'
                       rows='7'
@@ -123,10 +132,10 @@ export const Contacto = () => {
                     ></textarea>
                   </div>
 
-                  <div className="w-full flex justify-center">
-                  <button className=' w-[40%] rounded-full p-4 text-black mt-4 bg-teal-400'>
-                    Send Message
-                  </button>
+                  <div className='w-full flex justify-center'>
+                    <button className=' w-[40%] rounded-full p-4 text-black mt-4 bg-teal-400'>
+                      {t("contact.send")}
+                    </button>
                   </div>
                 </form>
               </div>

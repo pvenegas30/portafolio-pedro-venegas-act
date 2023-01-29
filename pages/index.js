@@ -2,6 +2,7 @@
 import Head from 'next/head'
 import { Inicio } from './components/Inicio';
 import { Estudios } from './components/Estudios';
+import './i18n';
 
 export default function Home() {
 

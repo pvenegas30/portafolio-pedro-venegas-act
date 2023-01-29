@@ -1,0 +1,42 @@
+{
+   "navbar.home": "Home",
+   "navbar.portofolio": "Portofolio",
+   "navbar.services": "Services",
+   "navbar.contact": "Contact",
+
+   "contact.home": "Contact me",
+   "home.presentation": "Hello! I consider myself a creative person, responsible and with initiative. I completed my studies in various professional courses and I always find myself learning to improve more and more my Skills.",
+   "home.developer": "Developer Web Full-Stack",
+   "home.learn.react": "Learn React",
+   "home.button.change": "Change Language",
+
+   "download.cv": "Download CV",
+
+   "services.dev": "I create your web page from scratch using the technology languages ​​ofmost appropriate programming.",
+   "services.dev.title": "Web development",
+
+   "services.content.title": "Content creation",
+   "services.content": "I have worked for multiple blogs in Spain as a writer and editor. I have more than 4 years of experience in the workplace.",
+
+   "services.design.title": "Design",
+   "services.design": "I master the design principles to do quality work using the most appropriate programs to meet Front-End objectives.",
+
+   "services.arq.title": "Architechture",
+   "services.design.skills": "Used programs",
+   "services.arq": "I am a professional in architecture, graduated from the José Antonio Páez University. I am qualified to create modern designs regarding buildings for tourism, education, sports, residential and commercial.",
+   "services.arq.ceo": "CEO of",
+   "services.arq.part": ", a new firm of architects focused on contemporary architecture.",
+
+   "contact.description": "I am a web developer who always keeps learning new things. Growing as a professional is one of my goals, so no idea is so crazy that it's impossible. What do you have in mind?",
+   "contact.title": "Contact",
+   "contact.dev.title": "Front-End Developer",
+   "contact.phrase": "Setting goals is the first step to turning the invisible into the visible",
+   "contact.withme": "¡Contact me!",
+
+   "contact.name": "Name",
+   "contact.tel": "Phone Number",
+   "contact.message": "Message",
+   "contact.subject": "Subject",
+   "contact.send": "Send Message"
+
+}

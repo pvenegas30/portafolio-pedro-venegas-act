@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import perfil from "../../public/perfil-home.jpg";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import ButtonPDF from "./ButtonPDF";
 import Link from "next/link";
+import Idioma from "../Idioma";
+import { useTranslation } from "react-i18next";
 
 export const Inicio = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className='w-full'>
       <div className='text-center px-14 pt-28 md:pt-40 md:px-10 md:flex md:flex-row-reverse md:justify-between lg:pt-32 lg:px-20'>
@@ -16,13 +20,10 @@ export const Inicio = () => {
             Pedro Venegas
           </h2>
           <h3 className='text-zinc-800 text-2xl py-2 font-semibold dark:text-white'>
-            Desarrollador Web Full-Stack
+            {t("home.developer")}
           </h3>
           <p className='flex justify-center items-center text-justify text-lg py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl lg:text-2xl'>
-            ¡Hola! Me considero una persona creativa, responsable y con
-            iniciativa. Realicé mis estudios en varios cursos profesionales y
-            siempre me encuentro aprendiendo para mejorar cada vez más mis
-            habilidades.
+            {t("home.presentation")}
           </p>
         </div>
 
@@ -63,9 +64,13 @@ export const Inicio = () => {
 
         <Link href='/contact'>
           <button className='cursor-pointer my-10 bg-teal-600 text-white font-semibold tracking-wide py-3 px-4 rounded-3xl text-sm md:text-md md:px-5 hover:bg-teal-700 active:bg-teal-800 dark:bg-teal-400 dark:text-black'>
-            Contáctame
+            {t("contact.home")}
           </button>
         </Link>
+      </div>
+
+      <div>
+        <Idioma />
       </div>
     </div>
   );
