@@ -64,3 +64,5 @@ export const Portafolio = () => {
     </div>
   );
 };
+
+// Empezar a acomodar la funcionalidad de portafolio y crear rutas para proyectos

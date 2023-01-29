@@ -1,98 +1,249 @@
-import React, { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState, useEffect } from "react";
+import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiOutlineArrowUp } from "react-icons/ai";
-import Image from "next/image";
-import logo from "../../public/logoBlue.png";
-import logoW from "../../public/logoWhite.png";
-import Link from "next/link";
+import NavLogo from "../../public/logoBlue.png";
+import NavLogoW from "../../public/logoWhite.png";
 
-export const NavBar = ({ darkOn }) => {
-  let Links = [
-    { name: "INICIO", link: "/home" },
-    { name: "PORTAFOLIO", link: "/portofolio" },
-    { name: "SERVICIOS", link: "/services" },
-    { name: "CONTACTO", link: "/contact" },
-  ];
+const NavBar = ({ darkOn }) => {
+  const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
 
-  let [open, setOpen] = useState(false);
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
 
   return (
-    <nav
-      id='nav'
-      className='fixed w-full bg-white py-3 px-5 mb-3 flex justify-between dark:text-white dark:bg-black transition-all duration-500 ease-in'
+    <div
+      style={{ backgroundColor: `${navBg}` }}
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
+          : "fixed w-full h-20 z-[100]"
+      }
     >
-      <div>
-        <Link className='flex flex-row' href='/home'>
-          <Image
-            src={logo}
-            alt='logo'
-            title='Pedro Venegas'
-            className='w-12 h-12 object-cover md:ml-6 dark:hidden'
-          />
+      <div className='bg-white flex justify-between items-center w-full h-full px-2 dark:bg-black transition-all duration-500 ease-in'>
+        <div>
+          <Link className='flex flex-row' href='/home'>
+            <Image
+              src={NavLogo}
+              alt='NavLogo'
+              title='Pedro Venegas'
+              className='w-12 h-12 object-cover md:ml-6 dark:hidden'
+            />
 
-          <Image
-            src={logoW}
-            alt='logoW'
-            title='Pedro Venegas'
-            className='w-12 h-12 object-cover hidden md:ml-6 dark:block'
-          />
+            <Image
+              src={NavLogoW}
+              alt='NavLogoW'
+              title='Pedro Venegas'
+              className='w-12 h-12 object-cover hidden md:ml-6 dark:block'
+            />
 
-          <span className='flex flex-col pl-3 font-semibold '>
-            <p className='text-black dark:text-white hidden md:block'>PEDRO</p>
-            <p className='text-black dark:text-white hidden md:block'>VENEGAS</p>
-          </span>
-        </Link>
-      </div>
-      {/* TEXT LINKS BAR */}
-      <div className='flex justify-center items-center text-right'>
-        <ul
-          className={`pr-8 transition-all duration-500 ease-in left-0 w-full pb-12 absolute bg-white shadow-[0px_11px_16px_0px_#5555553b] md:shadow-[0px_0px_0px_0px_000] dark:bg-black md:flex md:items-center md:z-auto z-[1] md:w-auto md:pb-0 md:static md:pl-0 ${
-            open ? "top-[70px] " : "top-[-490px]"
-          }`}
-        >
-          {Links.map((link) => (
-            <li
-              key={link.name}
-              className='w-full md:ml-5 text-xl md:text-lg md:my-0 my-7'
-            >
+            <span className='flex flex-col pl-3 font-semibold '>
+              <p className='text-black dark:text-white hidden md:block'>
+                PEDRO
+              </p>
+              <p className='text-black dark:text-white hidden md:block'>
+                VENEGAS
+              </p>
+            </span>
+          </Link>
+        </div>
+        {/* Text Bar */}
+        <div className='flex justify-center items-center text-right dark:text-white'>
+          <ul className='w-full hidden md:flex '>
+            <li className=' md:text-lg md:my-0 my-7'>
               <Link
-                href={link.link}
-                className=' text-black hover:text-teal-400 focus:text-teal-600 dark:hover:text-teal-200 dark:focus:text-teal-400 dark:text-white duration-500'
+                className='text-xl text-black hover:text-teal-400 focus:text-teal-600 dark:hover:text-teal-200 dark:focus:text-teal-400 dark:text-white duration-500'
+                href='/'
               >
-                {link.name}
+                Inicio
               </Link>
             </li>
-          ))}
-        </ul>
-      </div>
-      {/* ICONS BAR */}
-      <div className='flex items-center justify-center gap-x-5 md:mr-5'>
-        <div
-          className='flex items-center justify-center text-2xl'
-          title='Modo Oscuro'
-        >
-          <BsFillMoonStarsFill
-            onClick={darkOn}
-            className='cursor-pointer hover:text-teal-600 transition-all duration-200 ease-in'
-          />
+            <li className='ml-14 md:ml-5 md:text-lg md:my-0 my-7'>
+              <Link
+                className='text-xl text-black hover:text-teal-400 focus:text-teal-600 dark:hover:text-teal-200 dark:focus:text-teal-400 dark:text-white duration-500'
+                href='/portofolio'
+              >
+                Portafolio
+              </Link>
+            </li>
+            <li className='ml-14 md:ml-5 md:text-lg md:my-0 my-7'>
+              <Link
+                className='text-xl text-black hover:text-teal-400 focus:text-teal-600 dark:hover:text-teal-200 dark:focus:text-teal-400 dark:text-white duration-500'
+                href='/services'
+              >
+                Servicios
+              </Link>
+            </li>
+            <li className='ml-14 md:ml-5 md:text-lg md:my-0 my-7'>
+              <Link
+                className='text-xl text-black hover:text-teal-400 focus:text-teal-600 dark:hover:text-teal-200 dark:focus:text-teal-400 dark:text-white duration-500'
+                href='/contact'
+              >
+                Contacto
+              </Link>
+            </li>
+          </ul>
         </div>
 
-        <div className='flex items-center justify-center' title='Subir'>
-          <a
-            href='#'
-            className=' text-3xl hover:text-teal-600 transition-all duration-200 ease-in'
+        {/* ICONOS DARKMODE & UP */}
+        <div className='flex items-center justify-center gap-x-5 md:mr-5'>
+          <div
+            className='flex items-center justify-center text-2xl'
+            title='Modo Oscuro'
           >
-            <AiOutlineArrowUp />
-          </a>
-        </div>
+            <BsFillMoonStarsFill
+              onClick={darkOn}
+              className='cursor-pointer hover:text-teal-600 dark:text-white transition-all duration-200 ease-in'
+            />
+          </div>
 
-        <div
-          onClick={() => setOpen(!open)}
-          className='flex items-center justify-center cursor-pointer md:hidden text-4xl hover:text-teal-600 transition-all duration-200 ease-in'
-        >
-          <ion-icon name={open ? "close" : "menu"}></ion-icon>
+          <div className='flex items-center justify-center' title='Subir'>
+            <a
+              href='#'
+              className=' text-3xl hover:text-teal-600 dark:text-white transition-all duration-200 ease-in'
+            >
+              <AiOutlineArrowUp />
+            </a>
+          </div>
+          {/* Hamburger Icon */}
+          <div
+            onClick={handleNav}
+            className=' text-black md:hidden cursor-pointer dark:text-white'
+          >
+            <AiOutlineMenu size={30} />
+          </div>
         </div>
       </div>
-    </nav>
+
+      {/* Mobile Menu */}
+      {/* Overlay */}
+      <div
+        className={
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+        }
+      >
+        {/* Side Drawer Menu */}
+        <div
+          className={
+            nav
+              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-gray-900 p-10 ease-in duration-500"
+              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+          }
+        >
+          <div>
+            <div className='flex w-full items-center justify-between'>
+              <Image
+                src={NavLogo}
+                alt='NavLogo'
+                title='Pedro Venegas'
+                className='w-12 h-12 object-cover md:ml-6 dark:hidden'
+              />
+
+              <Image
+                src={NavLogoW}
+                alt='NavLogoW'
+                title='Pedro Venegas'
+                className='w-12 h-12 object-cover hidden md:ml-6 dark:block'
+              />
+              <div
+                onClick={handleNav}
+                className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer  dark:bg-white dark:shadow-gray-800'
+              >
+                <AiOutlineClose />
+              </div>
+            </div>
+          </div>
+          {/* LINKSNAV */}
+          <div className='py-14 flex flex-col'>
+            <ul className='uppercase'>
+              <Link href='/'>
+                <li
+                  onClick={() => setNav(false)}
+                  className='py-4 text-md font-bold tracking-widest dark:text-white'
+                >
+                  Inicio
+                </li>
+              </Link>
+              <Link href='/portofolio'>
+                <li
+                  onClick={() => setNav(false)}
+                  className='py-4 text-md font-bold tracking-widest dark:text-white'
+                >
+                  Portafolio
+                </li>
+              </Link>
+              <Link href='/services'>
+                <li
+                  onClick={() => setNav(false)}
+                  className='py-4 text-md font-bold tracking-widest dark:text-white'
+                >
+                  Servicios
+                </li>
+              </Link>
+              <Link href='/contact'>
+                <li
+                  onClick={() => setNav(false)}
+                  className='py-4 text-md font-bold tracking-widest dark:text-white'
+                >
+                  Contactos
+                </li>
+              </Link>
+            </ul>
+            <div className='pt-[70px] flex flex-col justify-center items-center'>
+              <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+                <Link
+                  href='https://www.linkedin.com/in/pedro-venegas-086bb8205'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 dark:bg-white dark:shadow-gray-800'>
+                    <FaLinkedinIn />
+                  </div>
+                </Link>
+                <Link
+                  href='https://github.com/pvenegas30'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 dark:bg-white dark:shadow-gray-800'>
+                    <FaGithub />
+                  </div>
+                </Link>
+                <Link href='/contact'>
+                  <div
+                    onClick={() => setNav(!nav)}
+                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 dark:bg-white dark:shadow-gray-800'
+                  >
+                    <AiOutlineMail />
+                  </div>
+                </Link>
+              </div>
+              <p className='text-center font-medium text-md text-teal-600 dark:text-white'>
+                Pedro Venegas ©2023
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
+
+export default NavBar;
