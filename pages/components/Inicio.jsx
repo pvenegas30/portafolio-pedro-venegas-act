@@ -68,10 +68,6 @@ export const Inicio = () => {
           </button>
         </Link>
       </div>
-
-      <div>
-        <Idioma />
-      </div>
     </div>
   );
 };

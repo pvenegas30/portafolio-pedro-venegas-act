@@ -9,17 +9,17 @@ export const Contacto = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className='flex flex-col justify-center w-full h-full px-10 pb-[400px] lg:px-[140px]'>
+    <div className='dark:bg-gray-900  file:flex flex-col justify-center w-full h-full px-10 pb-[400px] lg:px-[140px]'>
       <div id='contact' className='w-full lg:h-screen'>
         <div className='max-w-[1240px] m-auto px-2 py-14 w-full '>
-          <p className='mt-16 mb-10 text-xl tracking-widest uppercase text-teal-800'>
-            Contacto
+          <p className='mt-16 mb-10 text-xl tracking-widest uppercase text-teal-800 dark:text-teal-400'>
+            {t("contact.title")}
           </p>
 
           <div className='grid lg:grid-cols-5 gap-8'>
             {/* left */}
-            <div className='flex justify-center flex-col col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
-              <div className='flex justify-center flex-col lg:p-4 h-full '>
+            <div className='bg-white flex justify-center flex-col col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 dark:shadow-gray-800 dark:bg-gray-100 rounded-xl p-4 md:px-16 lg:px-5'>
+              <div className='flex justify-center flex-col p-4 h-full '>
                 <div className='flex justify-center pb-10'>
                   <Image
                     className='w-[100px] h-[100px] rounded-xl hover:scale-105 ease-in duration-300'
@@ -74,8 +74,8 @@ export const Contacto = () => {
             </div>
 
             {/* right */}
-            <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
-              <div className='pt-10 p-2'>
+            <div className='bg-white col-span-3 w-full h-auto shadow-xl shadow-gray-400 dark:shadow-gray-800 dark:bg-gray-100 rounded-xl lg:p-4'>
+              <div className='pt-10 p-2 px-10 lg:px-3'>
                 <form
                   action='https://getform.io/f/08ebcd37-f5b5-45be-8c13-714f011ce060'
                   method='POST'
@@ -133,7 +133,7 @@ export const Contacto = () => {
                   </div>
 
                   <div className='w-full flex justify-center'>
-                    <button className=' w-[40%] rounded-full p-4 text-black mt-4 bg-teal-400'>
+                    <button className='text-sm font-bold w-[60%] md:w-[40%] rounded-full p-3 md:p-4 text-black mt-4 bg-teal-400'>
                       {t("contact.send")}
                     </button>
                   </div>
