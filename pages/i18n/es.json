@@ -14,6 +14,7 @@
 
    "services.dev": "Creo tu página web desde cero utilizando los lenguajes de programación más adecuados.",
    "services.dev.title": "Desarrollo Web",
+   "services.app.title": "Desarrollo de Aplicación",
 
    "services.content.title": "Creación de contenido",
    "services.content": "He trabajado para múltiples blogs de España como redactor y editor. Tengo más de 4 años de experiencia en el ámbito laboral.",
@@ -40,5 +41,26 @@
    "contact.send": "Enviar Mensaje",
 
    "more.information": "Más Información",
-   "my.projects": "Mis Proyectos"
+   "my.projects": "Mis Proyectos",
+
+   "cod": "Código",
+   "tech.project": "Tecnologías",
+
+   "nova.description": "Este es un proyecto que actuamente en encuentra en proceso. Se trata de una página web enfocada para una empresa de arquitectura llamada Nova Architecture, la cual requiere de un diseño bien desarrollado que debe mantener la esencia profesional con ámbitos arquitectónicos. El desarrollo web ha sido realizado con tecnologías como HTML, TAILWINDCSS, REACT y más.",
+   "nova.type":"Web para firma de Arquitectura",
+
+   "weather.description": "En esta Weather App se puede consultar el clima de cualquier parte del mundo, ya sea a tiempo real o el pronónstico de días futuros. Para la creación de este proyecto hice uso de tecnologías como HTML, TailWindCSS, JavaScript, React y elementos de Luxon, IconScout, React Toastify y Openweather API.",
+   "weather.type":"Aplicación de Clima Mundial a tiempo real",
+
+   "movies.description": "Este proyecto cuenta con funcionalidades de búsqueda, edición, eliminación y más... En este caso, han sido hechas con React Hooks y LocalStorage, así también como HTML, CSS y Javascript.",
+   "movies.type": "Buscador de películas",
+
+   "chat.description": "Chat App es una aplicación creada con una funcionalidad a tiempo real para enviar mensajes a usuarios que sean registrados. Para lograrlo, se aplicaron tecnologías como HTML, SASS, JS, REACT y FIREBASE.",
+   "chat.type": "Aplicación de Chat a tiempo real",
+
+   "go.back": "Regresar"
+
+   
+   
+
 }

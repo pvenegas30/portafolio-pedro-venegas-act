@@ -14,6 +14,7 @@
 
    "services.dev": "I create your web page from scratch using the technology languages ​​ofmost appropriate programming.",
    "services.dev.title": "Web development",
+   "services.app.title": "Application Development",
 
    "services.content.title": "Content creation",
    "services.content": "I have worked for multiple blogs in Spain as a writer and editor. I have more than 4 years of experience in the workplace.",
@@ -40,6 +41,23 @@
    "contact.send": "Send Message",
 
    "more.information": "More Info",
-   "my.projects": "My Projects"
+   "my.projects": "My Projects",
+
+   "cod": "Code",
+   "tech.project": "Technologies",
+
+   "nova.description": "This is a project that is currently in process. It is a web page focused for an architecture company called Nova Architecture, which requires a well-developed design that must maintain the professional essence with the architectural environment. Web development has been done with technologies like HTML, TAILWINDCSS, REACT and more.",
+   "nova.type":"Website for architecture firm",
+
+   "weather.description": "In this weather application you can check the weather anywhere in the world, either in real time or the forecast for future days. For the creation of this project I used technologies such as HTML, TailWindCSS, JavaScript, React and elements from Luxon, IconScout, React Toastify and Openweather API.",
+   "weather.type":"World Weather Application in real time ",
+
+   "movies.description": "This project has functionalities for searching, editing, deleting and more... In this case, they have been made with React Hooks and LocalStorage, as well as HTML, CSS and Javascript.",
+   "movies.type": "Movie finder ",
+
+   "chat.description": "Chat App is an application created with real-time functionality to send messages to registered users. To achieve this, technologies such as HTML, SASS, JS, REACT and FIREBASE were applied.",
+   "chat.type": "Chat application in real time",
+
+   "go.back": "Go back"
 
 }

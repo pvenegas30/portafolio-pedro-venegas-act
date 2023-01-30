@@ -12,7 +12,7 @@ export const Contacto = () => {
     <div className='dark:bg-gray-900  file:flex flex-col justify-center w-full h-full px-10 pb-[100px] lg:pb-[400px] lg:px-[140px]'>
       <div id='contact' className='w-full lg:h-screen'>
         <div className='max-w-[1240px] m-auto px-2 py-14 w-full '>
-          <p className='mt-16 mb-10 text-xl tracking-widest uppercase text-teal-800 dark:text-teal-400'>
+          <p className='mt-16 mb-10 text-xl tracking-widest uppercase text-teal-700 dark:text-teal-400'>
             {t("contact.title")}
           </p>
 
@@ -133,7 +133,7 @@ export const Contacto = () => {
                   </div>
 
                   <div className='w-full flex justify-center'>
-                    <button className='text-sm font-bold w-[60%] md:w-[40%] rounded-full p-3 md:p-4 text-black mt-4 bg-teal-400'>
+                    <button className=' hover:bg-teal-600 active:bg-teal-400 dark:bg-teal-500 dark:text-black text-sm font-bold w-[60%] md:w-[40%] rounded-full p-3 md:p-4 text-black mt-4 bg-teal-400'>
                       {t("contact.send")}
                     </button>
                   </div>
