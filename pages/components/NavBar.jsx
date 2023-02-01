@@ -4,11 +4,11 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { AiOutlineArrowUp } from "react-icons/ai";
 import NavLogo from "../../public/logoBlue.png";
 import NavLogoW from "../../public/logoWhite.png";
 import { useTranslation } from "react-i18next";
 import Idioma from "../Idioma";
+import UpButton from "./UpButton";
 
 const NavBar = ({ darkOn }) => {
   const [nav, setNav] = useState(false);
@@ -108,7 +108,7 @@ const NavBar = ({ darkOn }) => {
           </ul>
         </div>
 
-        {/* ICONOS DARKMODE & UP */}
+        {/* ICON DARKMODE */}
         <div className='flex items-center justify-center gap-x-5 md:mr-5'>
           <div
             className='flex items-center justify-center text-2xl'
@@ -118,15 +118,6 @@ const NavBar = ({ darkOn }) => {
               onClick={darkOn}
               className='cursor-pointer hover:text-teal-600 dark:text-white transition-all duration-200 ease-in'
             />
-          </div>
-
-          <div className='flex items-center justify-center' title='Subir'>
-            <a
-              href='#'
-              className=' text-3xl hover:text-teal-600 dark:text-white transition-all duration-200 ease-in'
-            >
-              <AiOutlineArrowUp />
-            </a>
           </div>
 
           <div>
@@ -252,6 +243,7 @@ const NavBar = ({ darkOn }) => {
           </div>
         </div>
       </div>
+      <UpButton />
     </div>
   );
 };

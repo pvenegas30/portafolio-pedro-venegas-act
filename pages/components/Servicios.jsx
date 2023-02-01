@@ -58,7 +58,7 @@ export const Servicios = () => {
           </h3>
           <p className='py-2'>{t("services.content")}</p>
           <h4 className='py-4 text-teal-600 font-bold'>
-            Webs en las que he participado
+            {t("services.content.webs")}
           </h4>
           <ul className='pt-10 flex justify-center items-center flex-col text-teal-600'>
             <li className='mb-2'>
