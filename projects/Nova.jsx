@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import novarq from "../../public/projects/nova.png";
+import novarq from "../public/projects/nova.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import Link from "next/link";

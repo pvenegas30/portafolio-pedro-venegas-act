@@ -1,5 +1,5 @@
 import React from "react";
-import { Portafolio } from "./components/Portafolio";
+import { Portafolio } from './../components/Portafolio';
 
 function portofolio() {
     return <><Portafolio></Portafolio></>;

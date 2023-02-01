@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import perfil from "../../public/perfil-home.jpg";
+import perfil from "../public/perfil-home.jpg";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import ButtonPDF from "./ButtonPDF";
+import ButtonPDF from "./buttons/ButtonPDF";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 

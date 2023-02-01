@@ -1,6 +1,7 @@
 import React from "react";
-import { Estudios } from "./components/Estudios";
-import { Inicio } from './components/Inicio';
+import { Inicio } from './../components/Inicio';
+import { Estudios } from './../components/Estudios';
+
 function home() {
     return <><Inicio></Inicio><Estudios></Estudios></>;
 }

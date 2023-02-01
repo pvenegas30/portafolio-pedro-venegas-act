@@ -1,5 +1,5 @@
 import React from 'react'
-import { MoviesTime } from './projects/MoviesTime'
+import { MoviesTime } from '../projects/MoviesTime'
 
 const moviestime = () => {
     return (

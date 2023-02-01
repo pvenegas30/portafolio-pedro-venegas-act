@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import cert01 from "../../public/cert-studies/certificado-udemy-01.jpg";
-import cert02 from "../../public/cert-studies/certificado-udemy-02.jpg";
+import cert01 from "../public/cert-studies/certificado-udemy-01.jpg";
+import cert02 from "../public/cert-studies/certificado-udemy-02.jpg";
 
 export const Estudios = () => {
   return (

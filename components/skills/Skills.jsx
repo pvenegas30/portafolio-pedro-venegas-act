@@ -1,15 +1,15 @@
 import Image from "next/image";
 import React from "react";
-import Html from "../../../public/skills/HTML5.png";
-import Css from "../../../public/skills/CSS3.png";
-import Javascript from "../../../public/skills/Javascript.png";
-import ReactImg from "../../../public/skills/React.png";
-import Tailwind from "../../../public/skills/TailWindCSS.png";
-import Sass from "../../../public/skills/SASS.png";
-import StyledC from "../../../public/skills/Styled Components.png";
-import TypeScript from "../../../public/skills/Typescript.png";
-import RouterDom from "../../../public/skills/React Router Dom.png";
-import Redux from "../../../public/skills/Redux.png";
+import Html from "../../public/skills/HTML5.png";
+import Css from "../../public/skills/CSS3.png";
+import Javascript from "../../public/skills/Javascript.png";
+import ReactImg from "../../public/skills/React.png";
+import Tailwind from "../../public/skills/TailWindCSS.png";
+import Sass from "../../public/skills/SASS.png";
+import StyledC from "../../public/skills/Styled Components.png";
+import TypeScript from "../../public/skills/Typescript.png";
+import RouterDom from "../../public/skills/React Router Dom.png";
+import Redux from "../../public/skills/Redux.png";
 
 const Skills = () => {
   return (

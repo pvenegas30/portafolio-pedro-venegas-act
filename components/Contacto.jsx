@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import ContactImg from "../../public/03.png";
+import ContactImg from "../public/03.png";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 

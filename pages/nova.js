@@ -1,5 +1,5 @@
 import React from "react";
-import { Nova } from "./projects/nova";
+import { Nova } from './../projects/Nova';
 
 function nova() {
     return <><Nova></Nova></>;

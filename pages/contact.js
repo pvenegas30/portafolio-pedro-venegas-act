@@ -1,5 +1,5 @@
 import React from "react";
-import { Contacto } from './components/Contacto';
+import { Contacto } from './../components/Contacto';
 
 function contact() {
     return <><Contacto></Contacto></>;

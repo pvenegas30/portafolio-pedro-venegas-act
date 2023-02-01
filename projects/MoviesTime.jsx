@@ -1,12 +1,12 @@
-import React from "react";
 import Image from "next/image";
-import novarq from "../../public/projects/nova.png";
+import React from "react";
+import movies from "../public/projects/moviestime.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
-export const MyPort = () => {
+export const MoviesTime = () => {
   const { t, i18n } = useTranslation();
   return (
     <div className='w-full pt-20'>
@@ -14,17 +14,15 @@ export const MyPort = () => {
         <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10' />
         <Image
           className='absolute z-1 w-full h-[50vh] object-cover'
-          src={novarq}
+          src={movies}
           alt='/'
         />
 
         <div className='absolute top-[70%] max-w-[80%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
           <h2 className='py-2 font-bold text-2xl md:text-4xl lg:text-5xl '>
-            Nova
+            MoviesTime
           </h2>
-          <h3 className='text-xl font-bold text-white'>
-            React JS / Tailwind / Styled Components
-          </h3>
+          <h3 className='text-xl font-bold text-white'>{t("movies.type")}</h3>
         </div>
       </div>
 
@@ -34,7 +32,7 @@ export const MyPort = () => {
             {t("services.dev.title")}
           </h2>
           <p className='text-black dark:text-white text-justify'>
-            {t("nova.description")}
+            {t("movies.description")}
           </p>
 
           <div className='flex justify-center items-center pt-10'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { MyPort } from './projects/MyPort'
+import { MyPort } from './../projects/MyPort';
 
 const myport = () => {
     return (

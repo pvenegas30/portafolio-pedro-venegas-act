@@ -1,12 +1,12 @@
-import Image from "next/image";
 import React from "react";
-import forecastapp from "../../public/projects/weatherapp.png";
+import Image from "next/image";
+import novarq from "../public/projects/nova.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
-export const WeatherApp = () => {
+export const MyPort = () => {
   const { t, i18n } = useTranslation();
   return (
     <div className='w-full pt-20'>
@@ -14,25 +14,27 @@ export const WeatherApp = () => {
         <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10' />
         <Image
           className='absolute z-1 w-full h-[50vh] object-cover'
-          src={forecastapp}
+          src={novarq}
           alt='/'
         />
 
         <div className='absolute top-[70%] max-w-[80%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
           <h2 className='py-2 font-bold text-2xl md:text-4xl lg:text-5xl '>
-            Weather App Forecast
+            Nova
           </h2>
-          <h3 className='text-xl font-bold text-white'>{t("weather.type")}</h3>
+          <h3 className='text-xl font-bold text-white'>
+            React JS / Tailwind / Styled Components
+          </h3>
         </div>
       </div>
 
       <div className='max-w-[1240px] z-10 mx-auto p-2 grid md:grid-cols-5 gap-8 py-8 px-20'>
         <div className='col-span-4'>
           <h2 className='py-2 text-xl font-bold pb-6 text-teal-800 dark:text-teal-400'>
-            {t("services.app.title")}
+            {t("services.dev.title")}
           </h2>
           <p className='text-black dark:text-white text-justify'>
-            {t("weather.description")}
+            {t("nova.description")}
           </p>
 
           <div className='flex justify-center items-center pt-10'>

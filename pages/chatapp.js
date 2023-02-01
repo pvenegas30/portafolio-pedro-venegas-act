@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChatApp } from './projects/ChapAppRealtime'
+import { ChatApp } from './../projects/ChapAppRealtime';
 
 const chatapp = () => {
     return (

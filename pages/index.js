@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import Head from 'next/head'
-import { Inicio } from './components/Inicio';
-import { Estudios } from './components/Estudios';
+
 import './i18n';
+import { Inicio } from './../components/Inicio';
+import { Estudios } from './../components/Estudios';
 
 export default function Home() {
 

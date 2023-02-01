@@ -1,10 +1,10 @@
 import React from "react";
-import novarq from "../../public/projects/nova.png";
-import chatrealtime from "../../public/projects/chatapp.png";
-import forecastapp from "../../public/projects/weatherapp.png";
-import movies from "../../public/projects/moviestime.png";
-import ProjectItem from "./ProjectItem";
+import novarq from "../public/projects/nova.png";
+import chatrealtime from "../public/projects/chatapp.png";
+import forecastapp from "../public/projects/weatherapp.png";
+import movies from "../public/projects/moviestime.png";
 import { useTranslation } from "react-i18next";
+import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
   const { t, i18n } = useTranslation();

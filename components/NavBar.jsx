@@ -4,11 +4,11 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import NavLogo from "../../public/logoBlue.png";
-import NavLogoW from "../../public/logoWhite.png";
+import NavLogo from "../public/logoBlue.png";
+import NavLogoW from "../public/logoWhite.png";
 import { useTranslation } from "react-i18next";
-import Idioma from "../Idioma";
-import UpButton from "./UpButton";
+import UpButton from "./buttons/UpButton";
+import Idioma from "./../pages/Idioma";
 
 const NavBar = ({ darkOn }) => {
   const [nav, setNav] = useState(false);

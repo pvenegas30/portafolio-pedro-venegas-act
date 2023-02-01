@@ -1,54 +1,54 @@
 import Image from "next/image";
 import React from "react";
 
-import Firebase from "../../../public/skills/Firebase.png";
-import NextJS from "../../../public/skills/NextJS.png";
-import NodeJS from "../../../public/skills/NodeJS.png";
-import MongoDB from "../../../public/skills/MongoDB.png";
+import Twinmotion from "../../public/skills/twinmotion.png";
+import AutoCAD from "../../public/skills/autocad.png";
+import SketchUp from "../../public/skills/sketchup.png";
+import Revit from "../../public/skills/revit.png";
 
-const SkillsBack = () => {
+const SkillsArq = () => {
   return (
-    <div className='flex flex-wrap justify-center gap-[10px]'>
+    <div className='flex flex-wrap flex-col justify-center items-center gap-[10px]'>
       <div
-        title='Firebase 50%'
+        title='Twinmotion 80%'
         className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
-          src={Firebase}
-          alt='firebase'
+          src={Twinmotion}
+          alt='twinmotion'
           className='w-[60px] h-[60px] object-contain'
         />
       </div>
 
       <div
-        title='NextJS 70%'
+        title='AutoCAD 90%'
         className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
-          src={NextJS}
-          alt='nextjs'
+          src={AutoCAD}
+          alt='autocad'
           className='w-[60px] h-[60px] object-contain'
         />
       </div>
 
       <div
-        title='NodeJS 50%'
+        title='SketchUp 80%'
         className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
-          src={NodeJS}
-          alt='nodejs'
+          src={SketchUp}
+          alt='skechup'
           className='w-[60px] h-[60px] object-contain'
         />
       </div>
 
       <div
-        title='MongoDB 50%'
+        title='Revit 80%'
         className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
-          src={MongoDB}
-          alt='mongoDB'
+          src={Revit}
+          alt='revit'
           className='w-[60px] h-[60px] object-contain'
         />
       </div>
@@ -56,4 +56,4 @@ const SkillsBack = () => {
   );
 };
 
-export default SkillsBack;
+export default SkillsArq;

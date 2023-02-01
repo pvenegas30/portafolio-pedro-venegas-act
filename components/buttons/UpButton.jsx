@@ -4,7 +4,7 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 const UpButton = () => {
   return (
     <div
-      className='pt-[520px] flex justify-end items-end relative'
+      className='top-[520px] flex justify-end items-end relative'
       title='Subir'
     >
       <a

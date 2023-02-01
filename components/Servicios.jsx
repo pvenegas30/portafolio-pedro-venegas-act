@@ -1,16 +1,16 @@
 import React from "react";
 import Image from "next/image";
-import content from "../../public/code.png";
-import design from "../../public/design.png";
-import creativity from "../../public/diseño.png";
-import arq from "../../public/arq.png";
+import content from "../public/code.png";
+import design from "../public/design.png";
+import creativity from "../public/diseño.png";
+import arq from "../public/arq.png";
 import Skills from "./skills/Skills";
 import SkillsBack from "./skills/SkillsBack";
 import SkillsDesign from "./skills/SkillsDesign";
 import SkillsArq from "./skills/SkillsArq";
-import ButtonPDF2 from "./ButtonPDF2";
-import ButtonPDF from "./ButtonPDF";
-import ButtonPDF3 from "./ButtonPDF3";
+import ButtonPDF2 from "./buttons/ButtonPDF2";
+import ButtonPDF from "./buttons/ButtonPDF";
+import ButtonPDF3 from "./buttons/ButtonPDF3";
 import { useTranslation } from "react-i18next";
 
 export const Servicios = () => {
