@@ -9,14 +9,10 @@ import { useTranslations } from "next-intl";
 export const WeatherApp = () => {
   const t = useTranslations();
   return (
-    <div className='w-full pt-20'>
+    <div className='w-full'>
       <div className='w-full h-[50vh] relative'>
-        <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10' />
-        <Image
-          className='absolute z-1 w-full h-[50vh] object-cover'
-          src={forecastapp}
-          alt='/'
-        />
+        <div className=' top-0 left-0 w-full h-[50vh] bg-black/70 z-10' />
+        <Image className='w-full z-1 object-cover' src={forecastapp} alt='/' />
 
         <div className='absolute top-[70%] max-w-[80%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
           <h2 className='py-2 font-bold text-2xl md:text-4xl lg:text-5xl '>
