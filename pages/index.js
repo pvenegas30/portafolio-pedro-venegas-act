@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import Head from 'next/head'
-
-import './i18n';
+import { loadMessages } from "@/helpers/loadMessages";
 import { Inicio } from './../components/Inicio';
 import { Estudios } from './../components/Estudios';
 
@@ -22,6 +21,13 @@ export default function Home() {
         <Inicio />
         <Estudios />
       </main></>
-
   )
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      messages: await loadMessages(locale)
+    },
+  };
 }

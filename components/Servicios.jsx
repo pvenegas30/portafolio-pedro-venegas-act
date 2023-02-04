@@ -11,13 +11,13 @@ import SkillsArq from "./skills/SkillsArq";
 import ButtonPDF2 from "./buttons/ButtonPDF2";
 import ButtonPDF from "./buttons/ButtonPDF";
 import ButtonPDF3 from "./buttons/ButtonPDF3";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 export const Servicios = () => {
-  const { t, i18n } = useTranslation();
+  const t = useTranslations();
 
   return (
-    <section className='py-20 flex flex-wrap justify-center'>
+    <section className='py-20 flex flex-wrap justify-center 2xl:container 2xl:m-auto'>
       {/* DESARROLLADOR */}
       <div className='lg:flex gap-10 px-8 md:px-14'>
         <div className='text-center shadow-lg p-10 rounded-xl my-10 bg-white dark:bg-gray-100 flex-1'>
@@ -29,7 +29,7 @@ export const Servicios = () => {
             className='mx-auto'
           />
           <h3 className='text-lg font-medium pt-8 pb-2'>
-            {t("services.dev.title")}
+            {t("services.title")}
           </h3>
           <p className='py-2'>{t("services.dev")}</p>
           <h4 className='py-4 text-teal-600 font-bold'>Front-End</h4>
@@ -54,12 +54,10 @@ export const Servicios = () => {
             className='mx-auto'
           />
           <h3 className='text-lg font-medium pt-8 pb-2 '>
-            {t("services.content.title")}
+            {t("services.contenTitle")}
           </h3>
           <p className='py-2'>{t("services.content")}</p>
-          <h4 className='py-4 text-teal-600 font-bold'>
-            {t("services.content.webs")}
-          </h4>
+          <h4 className='py-4 text-teal-600 font-bold'>{t("services.webs")}</h4>
           <ul className='pt-10 flex justify-center items-center flex-col text-teal-600'>
             <li className='mb-2'>
               <a
@@ -140,11 +138,11 @@ export const Servicios = () => {
             className='mx-auto'
           />
           <h3 className='text-lg font-medium pt-8 pb-2 '>
-            {t("services.design.title")}
+            {t("services.designTitle")}
           </h3>
           <p className='py-2'>{t("services.design")}</p>
           <h4 className='py-6 text-teal-600 font-bold'>
-            {t("services.design.skills")}
+            {t("services.designSkills")}
           </h4>
           <SkillsDesign />
         </div>
@@ -160,12 +158,12 @@ export const Servicios = () => {
           className='mx-auto'
         />
         <h3 className='text-lg font-medium pt-8 pb-2 '>
-          {t("services.arq.title")}
+          {t("services.arqTitle")}
         </h3>
         <p className='py-2'>{t("services.arq")}</p>
 
         <p className='py-2'>
-          {t("services.arq.ceo")}{" "}
+          {t("services.arqCeo")}{" "}
           <a
             target='_blank'
             href='https://nova-architecture.netlify.app/'
@@ -174,7 +172,7 @@ export const Servicios = () => {
           >
             Nova Architecture
           </a>
-          {t("services.arq.part")}
+          {t("services.arqPart")}
         </p>
         <h4 className='py-4 text-teal-600 font-bold'>
           {t("services.design.skills")}

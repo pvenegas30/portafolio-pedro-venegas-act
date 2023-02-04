@@ -1,5 +1,6 @@
 import React from 'react'
 import { MyPort } from './../projects/MyPort';
+import { loadMessages } from "@/helpers/loadMessages";
 
 const myport = () => {
     return (
@@ -7,4 +8,12 @@ const myport = () => {
     )
 }
 
-export default myport
+export default myport;
+
+export async function getStaticProps({ locale }) {
+    return {
+        props: {
+            messages: await loadMessages(locale),
+        },
+    };
+}

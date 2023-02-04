@@ -4,10 +4,10 @@ import novarq from "../public/projects/nova.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 export const MyPort = () => {
-  const { t, i18n } = useTranslation();
+  const t = useTranslations();
   return (
     <div className='w-full pt-20'>
       <div className='w-full h-[50vh] relative'>

@@ -3,11 +3,11 @@ import novarq from "../public/projects/nova.png";
 import chatrealtime from "../public/projects/chatapp.png";
 import forecastapp from "../public/projects/weatherapp.png";
 import movies from "../public/projects/moviestime.png";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
-  const { t, i18n } = useTranslation();
+  const t = useTranslations();
   return (
     <div id='projects' className='w-full pt-[50px]'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>

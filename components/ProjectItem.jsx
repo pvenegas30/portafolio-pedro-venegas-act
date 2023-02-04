@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 const ProjectItem = ({ title, backgroundImg, tech, projectUrl }) => {
-  const { t, i18n } = useTranslation();
+  const t = useTranslations();
   return (
     <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 dark:shadow-gray-900 rounded-xl group hover:bg-gradient-to-r from-[#007a59] to-[#017f7b] transition-all duration-300 ease-in cursor-pointer '>
       <Link href={projectUrl}>

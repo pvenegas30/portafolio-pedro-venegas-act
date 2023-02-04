@@ -4,13 +4,13 @@ import perfil from "../public/perfil-home.jpg";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import ButtonPDF from "./buttons/ButtonPDF";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 export const Inicio = () => {
-  const { t, i18n } = useTranslation();
+  const t = useTranslations();
 
   return (
-    <div className='w-full'>
+    <div className='w-full container m-auto'>
       <div className='text-center px-14 pt-28 md:pt-40 md:px-10 md:flex md:flex-row-reverse md:justify-between lg:pt-32 lg:px-20'>
         {/* Sobre Mi */}
 
@@ -19,10 +19,10 @@ export const Inicio = () => {
             Pedro Venegas
           </h2>
           <h3 className='text-zinc-800 text-2xl py-2 font-semibold dark:text-white'>
-            {t("home.developer")}
+            {t("contact.developer")}
           </h3>
           <p className='flex justify-center items-center text-justify text-lg py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl lg:text-2xl'>
-            {t("home.presentation")}
+            {t("contact.presentation")}
           </p>
         </div>
 

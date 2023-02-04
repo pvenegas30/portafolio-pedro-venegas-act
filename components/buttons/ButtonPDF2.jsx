@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 const ButtonPDF2 = () => {
   const onButtonClick = () => {
@@ -14,7 +14,7 @@ const ButtonPDF2 = () => {
     });
   };
 
-  const { t, i18n } = useTranslation();
+  const t = useTranslations();
   return (
     <>
       <button

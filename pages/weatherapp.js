@@ -1,5 +1,6 @@
 import React from 'react'
 import { WeatherApp } from './../projects/WeatherApp';
+import { loadMessages } from "@/helpers/loadMessages";
 
 const weatherapp = () => {
     return (
@@ -8,3 +9,11 @@ const weatherapp = () => {
 }
 
 export default weatherapp
+
+export async function getStaticProps({ locale }) {
+    return {
+        props: {
+            messages: await loadMessages(locale),
+        },
+    };
+}

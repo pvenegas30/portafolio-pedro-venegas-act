@@ -2,13 +2,15 @@ import React from "react";
 import Image from "next/image";
 import cert01 from "../public/cert-studies/certificado-udemy-01.jpg";
 import cert02 from "../public/cert-studies/certificado-udemy-02.jpg";
+import { useTranslations } from "next-intl";
 
 export const Estudios = () => {
+  const t = useTranslations();
   return (
-    <div className='w-full h-full px-10 pb-64 lg:px-[140px]'>
+    <div className='w-full h-full px-10 pb-64 lg:px-[140px] container m-auto'>
       <div>
         <h2 className=' text-center text-3xl py-10 dark:text-white'>
-          Estudios
+          {t("studies.title")}
         </h2>
       </div>
 

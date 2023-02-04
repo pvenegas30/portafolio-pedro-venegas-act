@@ -3,6 +3,7 @@ import "../styles/tailwind.css";
 import { useState } from "react";
 import NavBar from './../components/NavBar';
 import { Footer } from './../components/Footer';
+import { NextIntlProvider } from 'next-intl';
 
 function MyApp({ Component, pageProps }) {
   const [darkMode, setDarkMode] = useState(false);
@@ -11,19 +12,19 @@ function MyApp({ Component, pageProps }) {
     setDarkMode(!darkMode);
   };
   return (
-    <div className={darkMode ? "dark" : ""} >
-      <div className="dark:bg-gray-900 transition-colors duration-300 ease-in">
+    <NextIntlProvider messages={pageProps.messages}>
+      <div className={darkMode ? "dark" : ""} >
+        <div className="dark:bg-gray-900 transition-colors duration-300 ease-in">
 
-        <NavBar darkOn={darkOn} >
+          <NavBar darkOn={darkOn}>
 
-        </NavBar>
-        <Component {...pageProps} />
+          </NavBar>
+          <Component {...pageProps} />
 
-        <footer>
           <Footer />
-        </footer>
+        </div>
       </div>
-    </div>
+    </NextIntlProvider>
   );
 }
 
