@@ -16,7 +16,7 @@ const Skills = () => {
     <div className='flex flex-wrap justify-center gap-[10px]'>
       <div
         title='HTML5 100%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={Html}
@@ -26,7 +26,7 @@ const Skills = () => {
       </div>
       <div
         title='CSS3 100%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={Css}
@@ -36,7 +36,7 @@ const Skills = () => {
       </div>
       <div
         title='JavaScript 90%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={Javascript}
@@ -46,7 +46,7 @@ const Skills = () => {
       </div>
       <div
         title='React 90%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={ReactImg}
@@ -56,7 +56,7 @@ const Skills = () => {
       </div>
       <div
         title='Tailwind 100%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={Tailwind}
@@ -67,7 +67,7 @@ const Skills = () => {
 
       <div
         title='Sass 90%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={Sass}
@@ -78,7 +78,7 @@ const Skills = () => {
 
       <div
         title='Styled Components 90%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={StyledC}
@@ -89,7 +89,7 @@ const Skills = () => {
 
       <div
         title='TypeScript 50%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={TypeScript}
@@ -100,7 +100,7 @@ const Skills = () => {
 
       <div
         title='React Router Dom 100%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={RouterDom}
@@ -111,7 +111,7 @@ const Skills = () => {
 
       <div
         title='Redux 70%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={Redux}

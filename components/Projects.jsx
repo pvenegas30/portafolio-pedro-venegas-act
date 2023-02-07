@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <div id='projects' className='w-full pt-[50px]'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
-        <p className='text-xl tracking-widest uppercase text-teal-700 pb-5'>
+        <p className='text-xl tracking-widest uppercase font-bold text-teal-700 pb-5'>
           {t("my.projects")}
         </p>
         <div className='grid md:grid-cols-2 gap-8'>

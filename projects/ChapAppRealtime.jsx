@@ -16,14 +16,14 @@ export const ChatApp = () => {
           id='imgChat'
         ></div>
 
-        <div className='py-5 md:py-14 absolute w-full md:h-[80px] m-auto bg-black/70 opacity-10 z-10 text-xl md:text-2xl text-white font-bold text-center'>
-          <h2 className='py-2'>NOVA ARCHITECTURE</h2>
+        <div className='py-5 md:py-14 absolute w-full md:h-[80px] m-auto bg-black/70 opacity-5 z-10 text-xl md:text-2xl text-white font-bold text-center'>
+          <h2 className='py-2'>RealTime Private Chat App</h2>
           <hr className=' bg-teal-500'></hr>
-          <h3 className='py-2'>React JS | Tailwind </h3>
+          <h3 className='py-2'>React JS | Sass | CSS3 | Firebase</h3>
         </div>
       </div>
 
-      <div className='max-w-[1240px] z-10 mx-auto p-2 flex gap-8 py-8 px-20 flex-col md:flex-row'>
+      <div className='max-w-[1240px] z-10 mx-auto p-2 flex gap-8 py-8 px-20 flex-col md:flex-row pt-10'>
         <div className='col-span-4'>
           <h2 className='py-2 px-8 text-xl font-bold pb-6 text-teal-800 dark:text-teal-400'>
             {t("services.title")}

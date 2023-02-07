@@ -11,7 +11,7 @@ const SkillsArq = () => {
     <div className='flex flex-wrap flex-col justify-center items-center gap-[10px]'>
       <div
         title='Twinmotion 80%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={Twinmotion}
@@ -22,7 +22,7 @@ const SkillsArq = () => {
 
       <div
         title='AutoCAD 90%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={AutoCAD}
@@ -33,7 +33,7 @@ const SkillsArq = () => {
 
       <div
         title='SketchUp 80%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={SketchUp}
@@ -44,7 +44,7 @@ const SkillsArq = () => {
 
       <div
         title='Revit 80%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={Revit}

@@ -11,7 +11,7 @@ const SkillsDesign = () => {
     <div className='flex flex-wrap flex-col justify-center items-center gap-[10px] gap-y-[30px]'>
       <div
         title='Figma 90%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={Figma}
@@ -22,7 +22,7 @@ const SkillsDesign = () => {
 
       <div
         title='Photoshop 60%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={Photoshop}
@@ -33,7 +33,7 @@ const SkillsDesign = () => {
 
       <div
         title='Illustrator 50%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={Illustrator}
@@ -44,7 +44,7 @@ const SkillsDesign = () => {
 
       <div
         title='Filmora 90%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={Filmora}

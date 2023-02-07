@@ -11,7 +11,7 @@ const SkillsBack = () => {
     <div className='flex flex-wrap justify-center gap-[10px]'>
       <div
         title='Firebase 50%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={Firebase}
@@ -22,7 +22,7 @@ const SkillsBack = () => {
 
       <div
         title='NextJS 70%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={NextJS}
@@ -33,7 +33,7 @@ const SkillsBack = () => {
 
       <div
         title='NodeJS 50%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={NodeJS}
@@ -44,7 +44,7 @@ const SkillsBack = () => {
 
       <div
         title='MongoDB 50%'
-        className='flex justify-center items-center w-16 h-16 cursor-pointer rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='flex justify-center items-center w-16 h-16 cursor-help	 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
       >
         <Image
           src={MongoDB}

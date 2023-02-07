@@ -12,7 +12,7 @@ export const Contacto = () => {
     <div className=' container m-auto dark:bg-gray-900  file:flex flex-col justify-center w-full h-full px-10 pb-[100px] lg:pb-[400px] lg:px-[140px]'>
       <div id='contact' className='w-full lg:h-screen'>
         <div className='max-w-[1240px] m-auto px-2 py-14 w-full '>
-          <p className='mt-16 mb-10 text-xl tracking-widest uppercase text-teal-700 dark:text-teal-400'>
+          <p className='font-bold mt-16 mb-10 text-xl tracking-widest uppercase text-teal-700 dark:text-teal-400'>
             {t("contact.title")}
           </p>
 
