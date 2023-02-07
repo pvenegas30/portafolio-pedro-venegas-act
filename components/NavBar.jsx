@@ -35,7 +35,7 @@ const NavBar = ({ darkOn }) => {
   const t = useTranslations();
 
   return (
-    <div className='container bg-white max-w-xl'>
+    <div className='2xl:container bg-white max-w-xl'>
       <div
         style={{ backgroundColor: `${navBg}` }}
         className={
@@ -44,7 +44,7 @@ const NavBar = ({ darkOn }) => {
             : "fixed w-full h-20 z-[100]"
         }
       >
-        <div className='container m-auto bg-white flex justify-between items-center w-full h-full px-2  dark:bg-black transition-all duration-500 ease-in'>
+        <div className='2xl:container 2xl:m-auto bg-white flex justify-between items-center w-full h-full px-2  dark:bg-black transition-all duration-500 ease-in'>
           <div>
             <Link className='flex flex-row' href='/'>
               <Image
