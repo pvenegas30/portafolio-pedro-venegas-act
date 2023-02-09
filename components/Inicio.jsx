@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Image from "next/image";
 import perfil from "../public/perfil-home.jpg";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";

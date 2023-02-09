@@ -1,8 +1,8 @@
 import React from "react";
-import novarq from "../public/projects/nova.png";
-import chatrealtime from "../public/projects/chatapp.png";
-import forecastapp from "../public/projects/weatherapp.png";
-import movies from "../public/projects/moviestime.png";
+import novarq from "../public/projects/nova.jpg";
+import chatrealtime from "../public/projects/chatapp.jpg";
+import forecastapp from "../public/projects/weatherapp.jpg";
+import movies from "../public/projects/moviestime.jpg";
 import { useTranslations } from "next-intl";
 import ProjectItem from "./ProjectItem";
 
@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <div id='projects' className='w-full pt-[50px]'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
-        <p className='text-xl tracking-widest uppercase font-bold text-teal-700 pb-5'>
+        <p className='text-xl tracking-widest uppercase font-bold text-teal-700 pb-5 pl-5'>
           {t("my.projects")}
         </p>
         <div className='grid md:grid-cols-2 gap-8'>

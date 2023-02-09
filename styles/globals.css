@@ -47,50 +47,50 @@ a {
 /* IMAGES PROJECTS */
 
 #imgChat {
-  background-image: url("../public/projects/chatapp.png");
+  background-image: url("../public/projects/chatapp.jpg");
   width: 100%;
   height: 400px;
 }
 
 #imgNova {
-  background-image: url("../public/projects/nova.png");
+  background-image: url("../public/projects/nova.jpg");
   width: 100%;
   height: 400px;
 }
 
 #imgMovies {
-  background-image: url("../public/projects/moviestime.png");
+  background-image: url("../public/projects/moviestime.jpg");
   width: 100%;
   height: 400px;
 }
 
 #imgWeather {
-  background-image: url("../public/projects/weatherapp.png");
+  background-image: url("../public/projects/weatherapp.jpg");
   width: 100%;
   height: 400px;
 }
 
 @media (max-width: 600px) {
   #imgChat {
-    background-image: url("../public/projects/chatapp.png");
+    background-image: url("../public/projects/chatapp.jpg");
     width: 100%;
     height: 300px;
   }
 
   #imgNova {
-    background-image: url("../public/projects/nova.png");
+    background-image: url("../public/projects/nova.jpg");
     width: 100%;
     height: 300px;
   }
 
   #imgMovies {
-    background-image: url("../public/projects/moviestime.png");
+    background-image: url("../public/projects/moviestime.jpg");
     width: 100%;
     height: 300px;
   }
 
   #imgWeather {
-    background-image: url("../public/projects/weatherapp.png");
+    background-image: url("../public/projects/weatherapp.jpg");
     width: 100%;
     height: 300px;
   }

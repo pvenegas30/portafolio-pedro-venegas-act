@@ -1,6 +1,4 @@
-import Image from "next/image";
 import React from "react";
-import movies from "../public/projects/moviestime.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import Link from "next/link";
