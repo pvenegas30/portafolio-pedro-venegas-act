@@ -4,7 +4,7 @@ import React from "react";
 import Photoshop from "../../public/skills/photoshop.png";
 import Illustrator from "../../public/skills/Illustrator.png";
 import Filmora from "../../public/skills/Filmora.png";
-import Figma from "../../public/skills/Figma.png";
+import Figma from "../../public/skills/figma.png";
 
 const SkillsDesign = () => {
   return (
