@@ -9,7 +9,7 @@ export const Inicio = () => {
   const t = useTranslations();
 
   return (
-    <div className='w-full container m-auto'>
+    <div className='w-full container m-auto overflow-x-hidden'>
       <div className='text-center px-14 pt-28 md:pt-40 md:px-10 md:flex md:flex-row-reverse md:justify-between lg:pt-32 lg:px-20'>
         {/* Sobre Mi */}
 
