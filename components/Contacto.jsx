@@ -4,20 +4,9 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import ContactImg from "../public/03.png";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 export const Contacto = () => {
   const t = useTranslations();
-
-  useEffect(() => {
-    Aos.init({
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 50,
-      duration: 800,
-    });
-  }, []);
 
   return (
     <div className=' container m-auto dark:bg-gray-900  file:flex flex-col justify-center w-full h-full px-5 pb-[100px] lg:pb-[400px] lg:px-[140px]'>
