@@ -51,14 +51,14 @@ const NavBar = ({ darkOn }) => {
                 src={NavLogo}
                 alt='NavLogo'
                 title='Pedro Venegas'
-                className='w-12 h-12 object-cover md:ml-6 dark:hidden pl-5'
+                className='w-12 h-12 object-cover md:ml-6 dark:hidden ml-5'
               />
 
               <Image
                 src={NavLogoW}
                 alt='NavLogoW'
                 title='Pedro Venegas'
-                className='w-12 h-12 object-cover hidden md:ml-6 dark:block pl-5'
+                className='w-12 h-12 object-cover hidden md:ml-6 dark:block ml-5'
               />
 
               <span className='flex flex-col pl-3 font-semibold '>
