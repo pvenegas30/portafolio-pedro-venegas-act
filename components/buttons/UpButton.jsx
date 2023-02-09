@@ -1,17 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { AiOutlineArrowUp } from "react-icons/ai";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const UpButton = () => {
-  useEffect(() => {
-    Aos.init({
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 80,
-      duration: 500,
-    });
-  }, []);
   return (
     <div
       className='top-[600px] md:top-[520px] flex justify-end items-end relative'
