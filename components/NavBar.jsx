@@ -127,7 +127,7 @@ const NavBar = ({ darkOn }) => {
             {/* Hamburger Icon */}
             <div
               onClick={handleNav}
-              className=' text-black md:hidden cursor-pointer dark:text-white p-5'
+              className=' text-black md:hidden cursor-pointer dark:text-white'
             >
               <AiOutlineMenu size={30} />
             </div>
