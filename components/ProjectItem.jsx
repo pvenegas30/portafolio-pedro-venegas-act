@@ -1,14 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslations } from "next-intl";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const ProjectItem = ({ title, backgroundImg, tech, projectUrl }) => {
   const t = useTranslations();
+
+  useEffect(() => {
+    Aos.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+      duration: 800,
+    });
+  }, []);
   return (
     <div>
       <div className='hidden md:block'>
-        <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 dark:shadow-gray-900 rounded-xl group hover:bg-gradient-to-r from-[#007a59] to-[#017f7b] transition-all duration-300 ease-in cursor-pointer '>
+        <div
+          data-aos='fade-right'
+          className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 dark:shadow-gray-900 rounded-xl group hover:bg-gradient-to-r from-[#007a59] to-[#017f7b] transition-all duration-300 ease-in cursor-pointer '
+        >
           <Link href={projectUrl}>
             <Image
               className='rounded-xl group-hover:opacity-25 object-contain hover:blur-sm'
@@ -31,7 +45,7 @@ const ProjectItem = ({ title, backgroundImg, tech, projectUrl }) => {
         </div>
       </div>
       {/* MOBILE */}
-      <div className='block md:hidden px-5'>
+      <div className='block md:hidden px-5' data-aos='fade-right'>
         <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 dark:shadow-gray-900 rounded-xl bg-black'>
           <Link href={projectUrl}>
             <Image

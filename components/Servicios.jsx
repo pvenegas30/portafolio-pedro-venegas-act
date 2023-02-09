@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import content from "../public/code.png";
 import design from "../public/design.png";
@@ -12,14 +12,25 @@ import ButtonPDF2 from "./buttons/ButtonPDF2";
 import ButtonPDF from "./buttons/ButtonPDF";
 import ButtonPDF3 from "./buttons/ButtonPDF3";
 import { useTranslations } from "next-intl";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export const Servicios = () => {
   const t = useTranslations();
 
+  useEffect(() => {
+    Aos.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+      duration: 800,
+    });
+  }, []);
+
   return (
     <section className='py-20 flex flex-wrap justify-center 2xl:container 2xl:m-auto'>
       {/* DESARROLLADOR */}
-      <div className='lg:flex gap-10 px-8 md:px-14'>
+      <div className='lg:flex gap-10 px-8 md:px-14' data-aos='fade-down'>
         <div className='text-center shadow-lg p-10 rounded-xl my-10 bg-white dark:bg-gray-100 flex-1'>
           <Image
             src={design}

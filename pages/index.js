@@ -3,7 +3,6 @@ import Head from 'next/head'
 import { loadMessages } from "@/helpers/loadMessages";
 import { Inicio } from './../components/Inicio';
 import { Estudios } from './../components/Estudios';
-
 export default function Home() {
 
   return (
@@ -14,9 +13,14 @@ export default function Home() {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/favicon.ico" />
       <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </Head><main className=" bg-white dark:bg-gray-900 transition-colors duration-300 ease-in">
+
+
+    </Head>
+      <main className=" bg-white dark:bg-gray-900 transition-colors duration-300 ease-in">
 
         <Inicio />
         <Estudios />

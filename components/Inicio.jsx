@@ -13,7 +13,13 @@ export const Inicio = () => {
       <div className='text-center px-14 pt-28 md:pt-40 md:px-10 md:flex md:flex-row-reverse md:justify-between lg:pt-32 lg:px-20'>
         {/* Sobre Mi */}
 
-        <div className='md:mr-5 md:pt-8'>
+        <div
+          className='md:mr-5 md:pt-8'
+          data-aos='fade-left'
+          data-aos-anchor='#example-anchor'
+          data-aos-offset='500'
+          data-aos-duration='800'
+        >
           <h2 className='text-4xl py-2 text-teal-600 font-medium dark:text-teal-400'>
             Pedro Venegas
           </h2>
@@ -27,7 +33,12 @@ export const Inicio = () => {
 
         {/* LinkedIn y GitHub */}
 
-        <div className='text-6xl flex justify-center gap-16 py-3 text-gray-600  dark:text-gray-400 md:px-10 md:text-5xl md:flex-col lg:text-7xl'>
+        <div
+          data-aos='fade-down'
+          data-aos-easing='linear'
+          data-aos-duration='800'
+          className='text-6xl flex justify-center gap-16 py-3 text-gray-600  dark:text-gray-400 md:px-10 md:text-5xl md:flex-col lg:text-7xl'
+        >
           <a
             href='https://github.com/pvenegas30'
             target='_blank'
@@ -48,7 +59,13 @@ export const Inicio = () => {
 
         {/* Perfil img */}
 
-        <div className='flex justify-center items-center mx-auto w-56 h-56 mt-5 md:pt-5 md:h-72 md:w-72 md:mx-0 lg:h-[300] lg:w-[300]'>
+        <div
+          data-aos='fade-right'
+          data-aos-anchor='#example-anchor'
+          data-aos-offset='500'
+          data-aos-duration='800'
+          className='flex justify-center items-center mx-auto w-56 h-56 mt-5 md:pt-5 md:h-72 md:w-72 md:mx-0 lg:h-[300] lg:w-[300]'
+        >
           <Image
             src={perfil}
             alt='perfil'
@@ -57,7 +74,13 @@ export const Inicio = () => {
         </div>
       </div>
       {/* Botón Download */}
-      <div className='w-full flex justify-center items-center gap-x-5 md:justify-end md:pr-[12%] lg:pr-[18%] md:gap-x-10'>
+      <div
+        data-aos='fade-left'
+        data-aos-anchor='#example-anchor'
+        data-aos-offset='500'
+        data-aos-duration='800'
+        className='w-full flex justify-center items-center gap-x-5 md:justify-end md:pr-[12%] lg:pr-[18%] md:gap-x-10'
+      >
         <ButtonPDF />
 
         <Link href='/contact'>
