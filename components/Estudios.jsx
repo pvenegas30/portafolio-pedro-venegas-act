@@ -23,7 +23,6 @@ export const Estudios = () => {
           className='md:w-[400px] md:h-[150px] lg:w-[450px] lg:h-[200px]'
         >
           <Image
-            data-aos='fade-right'
             src={cert01}
             alt='cert01'
             className='rounded-lg object-cover ease-in duration-100 shadow-[0px_3px_6px_3px_#00000024] hover:shadow-[0px_3px_8px_6px_#00000024]'
@@ -37,7 +36,6 @@ export const Estudios = () => {
           className='md:w-[400px] md:h-[150px] lg:w-[450px] lg:h-[200px]'
         >
           <Image
-            data-aos='fade-left'
             src={cert02}
             alt='cert02'
             className='rounded-lg object-cover ease-in duration-200 shadow-[0px_3px_6px_3px_#00000024] hover:shadow-[0px_3px_8px_6px_#00000024]'
