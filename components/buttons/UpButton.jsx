@@ -14,9 +14,8 @@ const UpButton = () => {
   }, []);
   return (
     <div
-      className='top-[520px] flex justify-end items-end relative '
+      className='top-[600px] md:top-[520px] flex justify-end items-end relative'
       title='Subir'
-      data-aos='fade-up'
     >
       <a
         href='#'
