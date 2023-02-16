@@ -4,9 +4,21 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import ButtonPDF from "./buttons/ButtonPDF";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export const Inicio = () => {
   const t = useTranslations();
+
+  useEffect(() => {
+    Aos.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+      duration: 800,
+    });
+  }, []);
 
   return (
     <div className='w-full container m-auto overflow-x-hidden'>
