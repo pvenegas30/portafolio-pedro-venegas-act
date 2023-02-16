@@ -6,9 +6,10 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import NavLogo from "../public/logoBlue.png";
 import NavLogoW from "../public/logoWhite.png";
-import UpButton from "./buttons/UpButton";
+// import UpButton from "./buttons/UpButton";
 import Idioma from "./../pages/Idioma";
 import { useTranslations } from "next-intl";
+import { ScrollToTop } from "./buttons/scroll/ScrollToTop";
 
 const NavBar = ({ darkOn }) => {
   const [nav, setNav] = useState(false);
@@ -246,7 +247,7 @@ const NavBar = ({ darkOn }) => {
             </div>
           </div>
         </div>
-        <UpButton />
+        <ScrollToTop />
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ export const Inicio = () => {
           <h3 className='text-zinc-800 text-2xl py-2 font-semibold dark:text-white'>
             {t("contact.developer")}
           </h3>
-          <p className='flex justify-center items-center text-justify text-lg py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl lg:text-2xl'>
+          <p className='flex justify-center items-center text-justify text-[15px] py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl lg:text-2xl'>
             {t("contact.presentation")}
           </p>
         </div>

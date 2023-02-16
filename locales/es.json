@@ -13,12 +13,10 @@
    "contact": {"home": "Contáctame",
                "presentation": "¡Hola! Me considero una persona creativa, responsable y con iniciativa. Realicé mis estudios en varios cursos profesionales y siempre me encuentro aprendiendo para mejorar cada vez más mis habilidades. ",
                "developer": "Desarrollador Web Full-Stack",
-               "learn.react": "Aprende React",
                "button.change": "Cambiar Idioma",
 
                "description": "Soy un desarrollador web que siempre se mantiene aprendiendo cosas nuevas. Crecer como profesional es una de mis metas, así que ninguna idea es tan descabellada como para que sea imposible. ¿Qué tienes en mente?",
                "title": "Contacto",
-               "dev.title": "Desarrollador Front-End",
                "phrase": "Establecer objetivos es el primer paso para convertir lo invisible en lo visible",
                "withme": "¡Contácta conmigo!",
             
@@ -59,12 +57,12 @@
 
    "weather": {
                "description": "En esta Weather App se puede consultar el clima de cualquier parte del mundo, ya sea a tiempo real o el pronónstico de días futuros. Para la creación de este proyecto hice uso de tecnologías como HTML, TailWindCSS, JavaScript, React y elementos de Luxon, IconScout, React Toastify y Openweather API.",
-               "weather.type":"Aplicación de Clima Mundial a tiempo real"
+               "type":"Aplicación de Clima Mundial a tiempo real"
             },
 
    "movies": {
                "description": "Este proyecto cuenta con funcionalidades de búsqueda, edición, eliminación y más... En este caso, han sido hechas con React Hooks y LocalStorage, así también como HTML, CSS y Javascript.",
-               "movies.type": "Buscador de películas"
+               "type": "Buscador de películas"
             },
 
    "chat": {

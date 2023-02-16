@@ -9,14 +9,12 @@
                },
    
    "contact": {"home": "Contact me",
-               "presentation": "Hello! I consider myself a creative person, responsible and with initiative. I completed my studies in various professional courses and I always find myself learning to improve more and more my Skills.",
+               "presentation": "Hello! I consider myself a creative, responsible and initiative person. I completed my studies in several professional courses and I always keep learning to improve my skills more and more.",
                "developer": "Full Stack Web Developer",
-               "learn.react": "Learn React",
                "button.change": "Change Language",
 
                "description": "I am a web developer who always keeps learning new things. Growing as a professional is one of my goals, so no idea is so crazy that it's impossible. What do you have in mind?",
                "title": "Contact",
-               "dev.title": "Front-End Developer",
                "phrase": "Setting goals is the first step to turning the invisible into the visible",
                "withme": "¡Contact me!",
             
@@ -30,19 +28,19 @@
    "download": {"cv": "Download CV"},
 
    "services": {
-               "dev": "I create your web page from scratch using the technology languages ofmost appropriate programming.",
+               "dev": "I can design your web page from scratch using the most appropriate programming languages.",
                "title": "Web development",
                "apptitle": "Application Development",
                "contenTitle": "Content creation",
-               "content": "I have worked for multiple blogs in Spain as a writer and editor. I have more than 4 years of experience in the workplace.",
+               "content": "I have worked for multiple blogs in Spain as a writer and editor. I have more than 4 years of work exprience.",
                "webs": "Websites in which I have participated",
                "designTitle": "Design",
-               "design": "I master the design principles to do quality work using the most appropriate programs to meet Front-End objectives.",
+               "design": "I can handle the design principles to do high quality work using the most appropriate programs to meet Front-End objectives.",
                "arqTitle": "Architechture",
                "designSkills": "Used programs",
-               "arq": "I am a professional in architecture, graduated from the José Antonio Páez University. I am qualified to create modern designs regarding buildings for tourism, education, sports, residential and commercial.",
+               "arq": " I am a professional Architect, graduated from the José Antonio Páez University. I am qualified to create modern designs regarding buildings for tourism, education, sports, residential and commercial.",
                "arqCeo": "CEO of",
-               "arqPart": ", a new firm of architects focused on contemporary architecture."
+               "arqPart": ", a new architectural firm focused on contemporary architecture."
    },
 
    "more": {"information": "More Info"},
@@ -58,12 +56,12 @@
 
    "weather": {
                "description": "In this weather application you can check the weather anywhere in the world, either in real time or the forecast for future days. For the creation of this project I used technologies such as HTML, TailWindCSS, JavaScript, React and elements from Luxon, IconScout, React Toastify and Openweather API.",
-               "weather.type":"World Weather Application in real time "
+               "type":"World Weather Application in real time"
                },
 
    "movies": {
                "description": "This project has functionalities for searching, editing, deleting and more... In this case, they have been made with React Hooks and LocalStorage, as well as HTML, CSS and Javascript.",
-               "movies.type": "Movie finder "},
+               "type": "Movie finder "},
 
    "chat": {
             "description": "Chat App is an application created with real-time functionality to send messages to registered users. To achieve this, technologies such as HTML, SASS, JS, REACT and FIREBASE were applied.",
