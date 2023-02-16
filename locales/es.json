@@ -51,7 +51,7 @@
    "tech": {"project": "Tecnologías"},
 
    "nova": {
-               "description": "Este es un proyecto que actuamente en encuentra en proceso. Se trata de una página web enfocada para una empresa de arquitectura llamada Nova Architecture, la cual requiere de un diseño bien desarrollado que debe mantener la esencia profesional con ámbitos arquitectónicos. El desarrollo web ha sido realizado con tecnologías como HTML, TAILWINDCSS, REACT y más.",
+               "description": "Este es un proyecto que actuamente se encuentra en proceso. Se trata de una página web enfocada para una empresa de arquitectura llamada Nova Architecture, la cual requiere de un diseño bien desarrollado que debe mantener la esencia profesional con ámbitos arquitectónicos. El desarrollo web ha sido realizado con tecnologías como HTML, TAILWINDCSS, REACT y más.",
                "type":"Web para firma de Arquitectura"
             },
 
