@@ -5,17 +5,19 @@ import Image from "next/image";
 import Vzla from "../public/vzla.png";
 import Usa from "../public/usa.png";
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 
 function Idioma() {
 
   const t = useTranslations();
 
+  const asPath = useRouter();
   return (
     <div className="flex flex-row gap-x-2 ">
 
 
-      <Link href="/en" locale="en" className='p-1 bg-teal-600 rounded-full text-white'>
+      <Link href={asPath} url={asPath} locale="en" className='p-1 bg-teal-600 rounded-full text-white'>
         <Image
           width={28}
           height={28}
@@ -24,7 +26,7 @@ function Idioma() {
           title='English'
         />
       </Link>
-      <Link href="/" locale="es" className='p-1 bg-teal-600 rounded-full text-white'>
+      <Link href={asPath} url={asPath} locale="es" className='p-1 bg-teal-600 rounded-full text-white'>
         <Image
           width={28}
           height={28}

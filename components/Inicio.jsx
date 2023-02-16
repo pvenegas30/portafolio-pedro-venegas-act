@@ -20,13 +20,13 @@ export const Inicio = () => {
           data-aos-offset='500'
           data-aos-duration='800'
         >
-          <h2 className='text-4xl py-2 text-teal-600 font-medium dark:text-teal-400'>
+          <h2 className='text-3xl py-2 text-teal-600 font-medium dark:text-teal-400'>
             Pedro Venegas
           </h2>
-          <h3 className='text-zinc-800 text-2xl py-2 font-semibold dark:text-white'>
+          <h3 className='text-zinc-800 text-[20px] py-0 font-semibold dark:text-white'>
             {t("contact.developer")}
           </h3>
-          <p className='flex justify-center items-center text-justify text-[15px] py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl lg:text-2xl'>
+          <p className='flex justify-center items-center text-justify text-lg py-4 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-[22px]'>
             {t("contact.presentation")}
           </p>
         </div>
@@ -84,7 +84,7 @@ export const Inicio = () => {
         <ButtonPDF />
 
         <Link href='/contact'>
-          <button className='cursor-pointer my-10 bg-teal-600 text-white font-semibold tracking-wide py-3 px-4 rounded-3xl text-sm md:text-md md:px-5 hover:bg-teal-700 active:bg-teal-800 dark:bg-teal-400 dark:text-black'>
+          <button className='cursor-pointer my-10 md:my-5 bg-teal-600 text-white font-semibold tracking-wide py-3 px-4 rounded-3xl text-sm md:text-md md:px-5 hover:bg-teal-700 active:bg-teal-800 dark:bg-teal-400 dark:text-black'>
             {t("contact.home")}
           </button>
         </Link>

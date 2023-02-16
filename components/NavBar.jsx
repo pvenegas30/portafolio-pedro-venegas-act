@@ -10,6 +10,7 @@ import NavLogoW from "../public/logoWhite.png";
 import Idioma from "./../pages/Idioma";
 import { useTranslations } from "next-intl";
 import { ScrollToTop } from "./buttons/scroll/ScrollToTop";
+import { useRouter } from "next/router";
 
 const NavBar = ({ darkOn }) => {
   const [nav, setNav] = useState(false);

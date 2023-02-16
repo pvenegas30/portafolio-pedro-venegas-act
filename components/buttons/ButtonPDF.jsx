@@ -19,7 +19,7 @@ const ButtonPDF = () => {
     <>
       <button
         onClick={onButtonClick}
-        className='cursor-pointer my-10 bg-teal-600 text-white font-semibold tracking-wide p-3 rounded-3xl text-sm md:text-md	 md:px-5 hover:bg-teal-700 active:bg-teal-800 dark:bg-teal-400 dark:text-black'
+        className='cursor-pointer my-10 bg-teal-600 text-white font-semibold tracking-wide p-3 rounded-3xl text-sm md:text-md	 md:px-5 hover:bg-teal-700 active:bg-teal-800 dark:bg-teal-400 dark:text-black md:my-5'
       >
         {t("download.cv")}
       </button>
