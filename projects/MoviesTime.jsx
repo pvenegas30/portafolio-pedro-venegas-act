@@ -30,7 +30,7 @@ export const MoviesTime = () => {
             {t("services.title")}
           </h3>
           <p className='text-black dark:text-white text-justify px-8'>
-            {t("nova.description")}
+            {t("movies.description")}
           </p>
 
           <div className='flex justify-center items-center pt-10  gap-x-10'>

@@ -30,7 +30,7 @@ export const ChatApp = () => {
             {t("services.apptitle")}
           </h3>
           <p className='text-black dark:text-white text-justify px-8'>
-            {t("nova.description")}
+            {t("chat.description")}
           </p>
 
           <div className='flex justify-center items-center pt-10  gap-x-10'>
