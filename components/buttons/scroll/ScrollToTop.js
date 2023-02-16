@@ -29,7 +29,7 @@ export const ScrollToTop = () => {
   }, []);
 
   return (
-    <div className='fixed bottom-5 right-5'>
+    <div className='fixed bottom-8 right-5'>
       <button
         type='button'
         onClick={scrollToTop}

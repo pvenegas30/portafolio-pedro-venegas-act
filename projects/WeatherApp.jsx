@@ -28,7 +28,7 @@ export const WeatherApp = () => {
           <h2 className='py-2 px-8 text-xl font-bold pb-6 text-gray-800 dark:text-teal-400'>
             {t("weather.type")}
           </h2>
-          <h3 className='py-2 px-8 text-[20px] font-bold pb-6 text-teal-800 dark:text-teal-400'>
+          <h3 className='py-2 px-8 text-[18px] font-bold pb-6 text-teal-800 dark:text-teal-400'>
             {t("services.apptitle")}
           </h3>
           <p className='text-black dark:text-white text-justify px-8'>
