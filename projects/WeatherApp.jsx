@@ -46,7 +46,7 @@ export const WeatherApp = () => {
               </button>
             </Link>
             <Link
-              href='https://nova-architecture.netlify.app/'
+              href='https://weather-app-pedro-venegas.netlify.app/'
               target='_blank'
               rel='noreferrer'
             >

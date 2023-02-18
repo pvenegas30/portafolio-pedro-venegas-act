@@ -44,7 +44,7 @@ export const MoviesTime = () => {
               </button>
             </Link>
             <Link
-              href='https://nova-architecture.netlify.app/'
+              href='https://pvenegas30.github.io/moviestime/'
               target='_blank'
               rel='noreferrer'
             >

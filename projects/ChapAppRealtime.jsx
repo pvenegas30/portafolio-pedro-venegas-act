@@ -44,7 +44,7 @@ export const ChatApp = () => {
               </button>
             </Link>
             <Link
-              href='https://nova-architecture.netlify.app/'
+              href='https://chat-app-pedrovenegas.netlify.app/'
               target='_blank'
               rel='noreferrer'
             >
